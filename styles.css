@@ -1,0 +1,688 @@
+/*General Page Layout===========================================================================================*/
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: lightgray;
+}
+
+#page {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+header {
+	display: flex;
+	flex: 0 1 82px; /*82 pixels tall*/
+	background-color: #fa543f;
+	padding: 15px;
+	margin: 0px;
+}
+#header-full {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	width: 100%;
+	height: 52px;
+	margin: 0px;
+	padding: 0px;
+}
+#header-mobile {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	width: 100%;
+	height: 52px;
+	margin: 0px;
+	padding: 0px;
+}
+#header-small {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	width: 100%;
+	height: 52px;
+	margin: 0px;
+	padding: 0px;
+}
+.decoration {
+	height: 52px;
+	margin: 0px;
+	padding: 0px;
+}
+.mobile-decoration {
+	height: 52px;
+	width: 70%;
+	margin: 0px;
+	padding: 0px;
+}
+img.float-center {
+	position:absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.mobile-button {
+	height: 52px;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+	background: url("/Resources/MobileButton.png") no-repeat;
+	background-size: cover;
+}
+.mobile-button:hover {
+	background: url("/Resources/MobileButtonHover.png") no-repeat;
+	background-size: cover;
+}
+
+#main-div {
+	display: flex;
+	flex: 1 1 auto; /*Stretch to fill*/
+}
+
+#pokenav {
+	display: inline-block; /*Along with the main-div's 'display: flex;', makes all divs same height as the tallest one.*/
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 200px;
+	background-color: #f1f1f1;
+}
+#pokenav-mobile {
+	height: calc(100% - 82px);
+	float: left;
+	width: 200px;
+	margin: 0;
+	padding: 0px;
+	background-color: #f1f1f1;
+	
+	position: absolute;
+	overflow-y: scroll;
+}
+
+h1.barheader {
+	margin: 0;
+	padding: 15px;
+	background: #ababab;
+	font-size: 15pt;
+}
+h1.barheader a {
+	color: black;
+}
+h1.barheader a:hover {
+	text-decoration: none;
+}
+ul.navlist {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	background-color: #555;
+	color: white;
+	text-decoration: none;
+}
+
+article {
+	display: inline-block;
+	float: left;
+	padding: 20px;
+	width: calc(100% - 400px);
+	background-color: #ffffff;
+}
+
+#pokegear {
+	display: inline-block;
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 200px;
+	background-color: #f1f1f1;
+}
+#pokegear-mobile {
+	height: calc(100% - 82px);
+	right: 0;
+	margin-left: 800px;
+	width: 200px;
+	margin: 0;
+	padding: 0px;
+	background-color: #f1f1f1;
+	
+	position: absolute;
+	overflow-y: scroll;
+}
+
+.centered {
+	margin: auto;
+	display: block;
+	text-align: center;
+}
+.sideimg {
+	max-width: 160px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+.bartext {
+	padding-bottom: 5px;
+}
+hr.barline {
+	border: 1px dashed;
+	width: 90%;
+	margin: 0 auto;
+}
+
+footer {
+	display: flex;
+	flex: 0 1 auto; /*Make footer as tall as its content*/
+	padding: 20px;
+	float: left;
+	background-color: #fa543f;
+}
+
+/*Screen Response-----------------------------------------------------------------------*/
+
+@media only screen and (max-width: 890px) { /*What to do when screen is or becomes too small*/
+	#header-full {
+		display: none;
+	}
+	/*Hide nav and side bars*/
+	#pokenav {
+		display: none;
+	}
+	#pokegear {
+		display: none;
+	}
+	/*make article 100% of the screen's width*/
+	article {
+		width: 100%;
+		height: 100%;
+	}
+	img.decoration {
+		visibility: hidden;
+		width: 0px;
+	}
+}
+
+@media only screen and (min-width: 891px) { /*What to do if screen becomes large enough*/
+	#header-mobile {
+		display: none;
+	}
+	#pokenav-mobile {
+		visibility: hidden;
+	}
+	#pokegear-mobile {
+		visibility: hidden;
+	}
+	img.mobile-button {
+		visibility: hidden;
+	}
+}
+
+/*Pokédex List Styles========================================================================================================*/
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 20pt;
+}
+
+p {
+	padding: 0px 2px 0px 2px;
+}
+
+p.news-signature {
+	text-align: right;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 18pt;
+	text-align: center;
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+p.data {
+	margin: 0px;
+}
+p.type {
+	text-align: center;
+	color: white;
+	border-radius: 7px;
+	margin: 2px;
+	padding: 1px;
+}
+p.Fire {
+	background-color: #f05a32;
+}
+p.Water {
+	background-color: #6991f0;
+}
+p.Electric {
+	background-color: #fad232;
+}
+p.Grass {
+	background-color: #78c850;
+}
+p.Ice {
+	background-color: #96d7d7;
+}
+p.Fighting {
+	background-color: #be3c28;
+}
+p.Poison {
+	background-color: #a041a0;
+}
+p.Ground {
+	background-color: #e1be69;
+}
+p.Flying {
+	background-color: #aa91f0;
+}
+p.Psychic {
+	background-color: #fa5a87;
+}
+p.Bug {
+	background-color: #9bb91e;
+}
+p.Rock {
+	background-color: #b9a037;
+}
+p.Ghost {
+	background-color: #6e5a96;
+}
+p.Dragon {
+	background-color: #6e37fa;
+}
+p.Dark {
+	background-color: #464650;
+}
+p.Steel {
+	background-color: #b9b9d2;
+}
+p.Fairy {
+	background-color: #f096aa;
+}
+p.Normal {
+	background-color: #aaaa82;
+}
+p.qqq {
+	background-color: #73a596;
+}
+p.Shadow {
+	background-color: #5d1616;
+}
+p.Nuclear {
+	background-color: #50f546;
+}
+p.Light {
+	background-color: #d2d282;
+}
+p.Sound {
+	background-color: #697873;
+}
+p.Magic {
+	background-color: #9147c5;
+}
+p.Digital {
+	background-color: #46cdaf;
+}
+p.Cosmic {
+	background-color: #500a82;
+}
+p.Crystal {
+	background-color: #5adcfa;
+}
+
+table {
+	border: 1px solid #0a0a0a;
+	border-radius: 10px;
+	background-color: #8888a2;
+	padding: 2px;
+}
+table tr:first-child th:first-child { /*Round top-left border if it's the first row of the first column.*/
+	border-radius: 10px 0 0 0;
+}
+table tr:first-child th:last-child {
+	border-radius: 0 10px 0 0;
+}
+table tr:first-child th:first-child:last-child { /*If there is only one column, round its top corners.*/
+	border-radius: 10px 10px 0 0;
+}
+
+table tr:first-child td:first-child {
+	border-radius: 10px 0 0 0;
+}
+table tr:first-child td:last-child {
+	border-radius: 0 10px 0 0;
+}
+
+table tr:last-child th:first-child {
+	border-radius: 0 0 0 10px;
+}
+table tr:last-child th:last-child {
+	border-radius: 0 0 10px 0;
+}
+
+table tr:last-child td:first-child {
+	border-radius: 0 0 0 10px;
+}
+table tr:last-child td:last-child {
+	border-radius: 0 0 10px 0;
+}
+
+table tr:last-child td:first-child:last-child { /*If the cell is the last one in a single colum, round its bottom edges.*/
+	border-radius: 0 0 10px 10px;
+}
+
+table tr:first-child:last-child td:first-child:last-child { /*If the cell is the only cell, round all corners.*/
+	border-radius: 10px;
+}
+
+th{
+	background-color: #dedef0;
+}
+th.sortable:hover {
+	cursor: pointer;
+}
+td {
+	background-color: #fcfcff;
+	text-align: center;
+}
+
+.dexlist {
+	width: 100%;
+	max-width: 500px;
+	margin: auto;
+}
+.col15 {
+	width: 15%;
+}
+.icon {
+	vertical-align: bottom;
+	padding: 5px;
+}
+.col40 {
+	width: 40%;
+}
+.leftalign {
+	text-align: left;
+	padding-left: 5px;
+}
+.col30 {
+	width: 30%;
+}
+
+/*Pokédex Gallery Styles========================================================================================*/
+div.gallerycontainer {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 20px;
+	justify-content: center;
+	width: 100%;
+}
+img.marker {
+	height: 15px;
+}
+img.interactive {
+	cursor: pointer;
+}
+th.sprh {
+	min-width: 218px;
+	padding-top: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	max-width: 320px;
+}
+td.sprf {
+	padding: 24px 24px 8px 24px;
+	height: 100%;
+	vertical-align: bottom;
+}
+.cell50 {
+	width: 50%;
+}
+
+/*Pokédex Page Styles===========================================================================================*/
+table tr:first-child:last-child th:first-child { /*If this is the only row and this is the first cell in it, round its left corners.*/
+	border-radius: 10px 0 0 10px;
+}table tr:first-child:last-child td:first-child { /*If this is the only row and this is the first cell in it, round its left corners.*/
+	border-radius: 10px 0 0 10px;
+}table tr:first-child:last-child th:last-child { /*If this is the only row and this is the last cell in it, round its right corners.*/
+	border-radius: 0 10px 10px 0;
+}table tr:first-child:last-child td:last-child { /*If this is the only row and this is the last cell in it, round its right corners.*/
+	border-radius: 0 10px 10px 0;
+}
+table tr:first-child td:first-child:last-child { /*If this is the first row and this is the only cell in it, round its top corners*/
+	border-radius: 10px 10px 0 0;
+}
+
+.full {
+	width: 100%;
+}
+.col35 {
+	width: 35%;
+}
+.rightalign {
+	text-align: right;
+	padding-right: 5px;
+}
+td.banner {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+.marginbtm {
+	margin-bottom: 20px;
+}
+th.familyheader {
+	color: #f7c03d;
+	padding: 3px 0 3px 0;
+	background-color: #151515;
+	font-size: 15pt;
+}
+p.familyentry {
+	margin: 8px;
+}
+th.species {
+	color: white;
+	padding: 3px 0 3px 0;
+	background-color: #e82a23;
+	font-size: 15pt;
+}
+
+hr {
+	border: 1px dashed;
+	margin-top: 20px;
+}
+
+h3 {
+	text-align: center;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	font-size: 16pt;
+}
+table.dex {
+	width: 320px;
+}
+th.dexh {
+	width: 35%;
+}
+td.dexh {
+	width: 65%;
+}
+.nkdf {
+	font-style: italic;
+	text-decoration: underline;
+	text-decoration-color: #472597;
+}
+.male {
+	color: #1A11D5;
+}
+.female {
+	color: #BB0544;
+}
+.genderless {
+	color: #535353;
+}
+
+p.color {
+	color: white;
+	text-align: center;
+	border-radius: 7px;
+	margin: 2px;
+	padding: 1px;
+}
+p.indeterminate {
+	background-color: #b197c2;
+}
+p.red {
+	background-color: #f11616;
+}
+p.orange {
+	background-color: #ffa128;
+}
+p.yellow {
+	background-color: #f9ef14;
+}
+p.green {
+	background-color: #21e424;
+}
+p.blue {
+	background-color: #4970eb;
+}
+p.purple {
+	background-color: #c840f4;
+}
+p.pink {
+	background-color: #ff6ead;
+}
+p.black {
+	background-color: #2f2337;
+}
+p.gray {
+	background-color: #989898;
+}
+p.white {
+	color: black;
+	background-color: #eeeeee;
+}
+
+p.stat {
+	text-align: center;
+	border-radius: 7px;
+	margin: 2px;
+	padding: 1px;
+}
+
+.col25 {
+	width: 25%;
+}
+.hp {
+	background-color: #ffb4ed;
+}
+.attack {
+	background-color: #ff9696;
+}
+.defense {
+	background-color: #fffdb4;
+}
+.spatk {
+	background-color: #b4b5ff;
+}
+.spdef {
+	background-color: #b4ffc4;
+}
+.speed {
+	background-color: #b4fffb;
+}
+
+td.hp {
+	background-color: #ffe3f8;
+}
+td.attack {
+	background-color: #ffd7d7;
+}
+td.defense {
+	background-color: #fffee3;
+}
+td.spatk {
+	background-color: #e0e1ff;
+}
+td.spdef {
+	background-color: #e7ffec;
+}
+td.speed {
+	background-color: #e7fffe;
+}
+
+td.total {
+	background-image: url("/Resources/StatTotalBackground.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+td.dexpage {
+	text-align: left;
+	padding: 5px;
+}
+
+img.shape {
+	max-height: 32px;
+	max-width: 32px;
+}
+
+.col75 {
+	width: 75%;
+}
+
+h4 {
+	text-align: center;
+	margin: 0px 0px 2px 0px;
+	font-size: 14pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+th.dexv {
+	text-align: center;
+	background-color: #dedef0;
+	padding: 3px 10px 3px 10px;
+}
+td.dexv {
+	text-align: center;
+	background-color: #fcfcff;
+}
