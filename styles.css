@@ -201,6 +201,11 @@ footer {
 
 img.footer {
 	height: 52px;
+	margin-right: 20px;
+}
+
+div.footer {
+	border: 15px solid #f4ad7d;
 }
 
 /*Screen Response-----------------------------------------------------------------------*/
