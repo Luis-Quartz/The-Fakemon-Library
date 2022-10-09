@@ -63,7 +63,7 @@ h1.header {
 }
 h1.header-mobile {
 	font-family: Eras-Demi;
-	font-stretch: narrower;
+	font-stretch: condensed;
 }
 .decoration {
 	height: 52px;
