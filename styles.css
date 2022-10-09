@@ -54,17 +54,18 @@ div.header {
 	border-radius: 25px;
 	background-color: white;
 	height: 52px;
-	max-width: calc(100% - 164px);
 }
 .decoration {
 	height: 52px;
 	margin: 0px;
 	padding: 0px;
+	max-width: 100%;
 }
 .mobile-decoration {
 	height: 52px;
 	margin: 0px;
 	padding: 0px;
+	max-width: 100%;
 }
 img.float-center {
 	position:absolute;
