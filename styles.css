@@ -64,6 +64,7 @@ div.header {
 	height: 52px;
 	margin: 0px;
 	padding: 0px;
+	max-width: calc(100% - 164px);
 }
 img.float-center {
 	position:absolute;
