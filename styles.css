@@ -205,12 +205,14 @@ img.footer {
 }
 
 div.footer {
-	border: 15px solid #f4ad7d;
+	border: 8px solid #f4ad7d;
+	background-color: white;
+	margin: 7px;
 }
 
 /*Screen Response-----------------------------------------------------------------------*/
 
-@media only screen and (max-width: 890px) { /*What to do when screen is or becomes too small*/
+@media only screen and (max-width: 624px) { /*What to do when screen is or becomes too small*/
 	#header-full {
 		display: none;
 	}
@@ -232,7 +234,7 @@ div.footer {
 	}
 }
 
-@media only screen and (min-width: 891px) { /*What to do if screen becomes large enough*/
+@media only screen and (min-width: 625px) { /*What to do if screen becomes large enough*/
 	#header-mobile {
 		display: none;
 	}
