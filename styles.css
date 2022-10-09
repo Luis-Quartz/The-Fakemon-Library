@@ -57,7 +57,7 @@ div.header {
 	padding-top: 3px;
 	height: 52px;
 }
-@font-face { font-family: Eras-Demi; src: url('/Resources/Eras-Demi.ttf'); } 
+@font-face { font-family: Eras-Demi; src: url('/Resources/Eras-Demi.TTF'); } 
 h1.header {
 	font-family: Eras-Demi;
 }
