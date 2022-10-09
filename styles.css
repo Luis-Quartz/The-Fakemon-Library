@@ -199,6 +199,10 @@ footer {
 	background-color: #fa543f;
 }
 
+img.footer {
+	height: 52px;
+}
+
 /*Screen Response-----------------------------------------------------------------------*/
 
 @media only screen and (max-width: 890px) { /*What to do when screen is or becomes too small*/
