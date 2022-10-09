@@ -57,9 +57,13 @@ div.header {
 	padding-top: 3px;
 	height: 52px;
 }
-@font-face { font-family: Eras-Demi; src: url('Resources/ERASDEMI.ttf'); } 
+@font-face { font-family: Eras-Demi; src: url('/Resources/Eras-Demi.ttf'); } 
 h1.header {
 	font-family: Eras-Demi;
+}
+h1.header-mobile {
+	font-family: Eras-Demi;
+	font-stretch: narrow;
 }
 .decoration {
 	height: 52px;
