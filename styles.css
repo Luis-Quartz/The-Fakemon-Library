@@ -57,6 +57,10 @@ div.header {
 	padding-top: 3px;
 	height: 52px;
 }
+@font-face { font-family: Eras-Demi; src: url('Resources/ERASDEMI.ttf'); } 
+h1.header {
+	font-family: Eras-Demi;
+}
 .decoration {
 	height: 52px;
 	margin: 0px;
@@ -675,24 +679,4 @@ h4 {
 	text-align: center;
 	margin: 0px 0px 2px 0px;
 	font-size: 14pt;
-}
-
-
-
-
-
-
-
-
-
-
-
-th.dexv {
-	text-align: center;
-	background-color: #dedef0;
-	padding: 3px 10px 3px 10px;
-}
-td.dexv {
-	text-align: center;
-	background-color: #fcfcff;
 }
