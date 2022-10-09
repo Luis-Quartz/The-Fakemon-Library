@@ -201,6 +201,7 @@ footer {
 
 div.footer {
 	border: 8px solid #f4ad7d;
+	border-radius: 15px;
 	background-color: white;
 	padding: 7px;
 }
