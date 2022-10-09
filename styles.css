@@ -56,6 +56,13 @@ header {
 	margin: 0px;
 	padding: 0px;
 }
+div.header {
+	border: 8px solid #f4ad7d;
+	border-radius: 15px;
+	background-color: white;
+	padding: 7px;
+	width: 100%;
+}
 .decoration {
 	height: 52px;
 	margin: 0px;
@@ -200,10 +207,12 @@ footer {
 }
 
 div.footer {
-	border: 8px solid #f4ad7d;
+	border: 8px solid #a1fdfd;
 	border-radius: 15px;
 	background-color: white;
 	padding: 7px;
+	margin: 0px;
+	width: 100%;
 }
 
 /*Screen Response-----------------------------------------------------------------------*/
