@@ -209,6 +209,10 @@ div.footer {
 	width: 100%;
 }
 
+p.footer {
+	margin-bottom: 8px;
+}
+
 /*Screen Response-----------------------------------------------------------------------*/
 
 @media only screen and (max-width: 770px) { /*What to do when screen is or becomes too small*/
