@@ -258,7 +258,7 @@ h1 {
 p {
 	padding: 0px 2px 0px 2px;
 }
-p.last-child {
+p:last-child {
 	margin-bottom: 0px;
 }
 
