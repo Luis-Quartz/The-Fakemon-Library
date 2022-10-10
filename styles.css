@@ -257,6 +257,7 @@ h1 {
 
 p {
 	padding: 0px 2px 0px 2px;
+	margin-bottom: 0px;
 }
 
 p.news-signature {
