@@ -263,8 +263,10 @@ h1 {
 p {
 	padding: 0px 2px 0px 2px;
 }
-p:last-child {
-	margin-bottom: 0px;
+
+div.news-entry {
+	background-color: #a1d0e0;
+	border-radius: 10px;
 }
 
 p.news-signature {
@@ -522,9 +524,6 @@ table tr:first-child td:first-child:last-child { /*If this is the first row and 
 td.banner {
 	padding-left: 7px;
 	padding-right: 7px;
-}
-.marginbtm {
-	margin-bottom: 20px;
 }
 th.familyheader {
 	color: #f7c03d;
