@@ -273,9 +273,6 @@ div.news-entry {
 div.news-entry:hover {
 	background-color: #ccccff;
 }
-div.news-entry:first-child {
-	margin-top: 200px;
-}
 div.news-entry:last-child {
 	margin-bottom: 0px;
 }
