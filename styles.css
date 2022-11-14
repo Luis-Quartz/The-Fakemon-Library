@@ -280,6 +280,7 @@ div.news-entry:hover {
 p.news-signature {
 	text-align: right;
 	font-style: italic;
+	margin-bottom: 0px;
 }
 
 .centered-title {
