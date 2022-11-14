@@ -148,7 +148,6 @@ article {
 	display: inline-block;
 	float: left;
 	padding: 20px;
-	padding-bottom: 0px;
 	width: calc(100% - 400px);
 	background-color: #ffffff;
 }
