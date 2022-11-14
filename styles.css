@@ -148,6 +148,7 @@ article {
 	display: inline-block;
 	float: left;
 	padding: 20px;
+	padding-bottom: 0px;
 	width: calc(100% - 400px);
 	background-color: #ffffff;
 }
@@ -272,6 +273,9 @@ div.news-entry {
 }
 div.news-entry:hover {
 	background-color: #ccccff;
+}
+div.news-entry:last-child {
+	margin-bottom: 0px;
 }
 
 p.news-signature {
