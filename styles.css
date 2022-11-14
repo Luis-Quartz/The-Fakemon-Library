@@ -265,9 +265,9 @@ p {
 }
 
 div.news-entry {
-	padding: 7px;
-	margin-bottom: 10px;
-	background-color: #e6f2ff;
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: #e6e6ff;
 	border-radius: 10px;
 }
 div.news-entry:last-child {
