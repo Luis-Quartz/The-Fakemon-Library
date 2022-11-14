@@ -265,8 +265,16 @@ p {
 }
 
 div.news-entry {
-	background-color: #a1d0e0;
+	padding: 7px;
+	margin-bottom: 10px;
+	background-color: #e6f2ff;
 	border-radius: 10px;
+}
+div.news-entry:last-child {
+	margin-bottom: 0px;
+}
+div.news-entry:hover {
+	background-color: #ccccff;
 }
 
 p.news-signature {
