@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<link rel="shortcut icon" href="/Resources/Icon.png">
+		<title>Pokédex List | Pokémon Quartz | The Fakemon Library</title>
+		<link rel="stylesheet" href="/styles.css">
+		<script src="/dynamics.js"></script>
+		<meta name="viewport" content="width=device-width"/>
+		<meta name="description" content="The Fakemon Library is a project dedicated to documenting and archiving as many fan-made Pokémon as possible while maintaining consistent quality and presentation."/>
+	</head>
+
+	<body>
+	
+		<div id="page">
+		
+			<header include-html="/header.html">
+			</header>
+			
+			<div id="main-div">
+			
+				<div id="pokenav" include-html="/navbar.html">
+				</div>
+				
+				<div id="pokenav-mobile" include-html="/navbar.html" style="display: none;">
+				</div>
+				
+				<article>
+				
+					<h1>Pokémon Quartz Pokédex</h1>
+					
+					<p>Pokémon Quartz introduced 386 new Fakemon, replacing every existing Pokémon as of Generation 3. Many Fakemon in Pokémon Quartz are direct stand-ins for official Pokémon.</p>
+					
+					<p>This page lists all of these Fakemon in National Pokédex order, separated by Generation.</p>
+					
+					<h2>Generation 1</h2>
+					
+					<table id="dexlist1" class="dexlist">
+					
+						<tr>
+							<th class="col15 sortable" onclick="sortTable(0, 'dexlist1')">
+								No.
+							</th>
+							<th colspan=2 class="sortable" onclick="sortTable(1, 'dexlist1')">
+								Pokémon
+							</th>
+							<th class="col30 sortable" onclick="sortTable(3, 'dexlist1')">
+								Type
+							</th>
+						</tr>
+						
+						<tr>
+							<td>
+								001
+							</td>
+							<td class="col15">
+								<img src="Icons/Chapebaya.png" class="icon"></img>
+							</td>
+							<td class="col40 leftalign">
+								<a href="Pokédex/Chapebaya.html">
+									Chapebaya
+								</a>
+							</td>
+							<td>
+								<p class="type Grass">Grass</p>
+								<p class="type Grass">Grass</p>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								004
+							</td>
+							<td>
+								<img src="Icons/ChapebayaAlolan.png" class="icon"></img>
+							</td>
+							<td class="leftalign">
+								<a href="Pokédex/Chapebaya.html">
+									Alolan Chapebaya
+								</a>
+							</td>
+							<td>
+								<p class="type Grass">Grass</p>
+								<p class="type Fire">Fire</p>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								025
+							</td>
+							<td>
+								<img src="Icons/ChapebayaNuclear.png" class="icon"></img>
+							</td>
+							<td class="leftalign">
+								<a href="Pokédex/Chapebaya.html">
+									Chapebaya Root
+								</a>
+							</td>
+							<td>
+								<p class="type Electric">Electric</p>
+								<p class="type Psychic">Psychic</p>
+							</td>
+						</tr>
+						
+					</table>
+					
+				</article>
+				
+				<div id="pokegear" include-html="sidebar.html">
+				</div>
+				
+				<div id="pokegear-mobile" include-html="sidebar.html" style="display: none;">
+				</div>
+				
+			</div>
+			
+			<footer include-html="/footer.html">
+			</footer>
+		
+		</div>
+		
+		<script>
+			includeHTML();
+		</script>
+		
+	</body>
+</html>
