@@ -266,12 +266,8 @@ p {
 
 div.news-entry {
 	padding: 20px;
-	margin-bottom: 20px;
 	background-color: #e6e6ff;
 	border-radius: 10px;
-}
-div.news-entry:last-child {
-	margin-bottom: 0px;
 }
 div.news-entry:hover {
 	background-color: #ccccff;
