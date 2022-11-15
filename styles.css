@@ -255,14 +255,14 @@ p.footer {
 
 /*Pokédex List Styles========================================================================================================*/
 h1 {
-	margin: 0px;
+	margin: 0px 15px 0px 0px;
 	padding: 0px;
 	font-size: 20pt;
 }
 
 p {
 	padding: 0px 2px 0px 2px;
-	margin: 0px;
+	margin: 0px 15px 0px 0px;
 }
 
 div.news-entry {
