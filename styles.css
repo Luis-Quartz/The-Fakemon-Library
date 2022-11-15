@@ -255,24 +255,30 @@ p.footer {
 
 /*Pokédex List Styles========================================================================================================*/
 h1 {
-	margin: 0px 15px 0px 0px;
+	margin: 0px 0px 15px 0px;
 	padding: 0px;
 	font-size: 20pt;
 }
 
 p {
 	padding: 0px 2px 0px 2px;
-	margin: 0px 15px 0px 0px;
+	margin: 0px 0px 15px 0px;
+}
+.nobtm {
+	margin-bottom: 0px;
 }
 
 div.news-entry {
 	padding: 20px;
-	margin: 20px 0px 0px 0px;
+	margin: 0px 0px 20px 0px;
 	background-color: #e6e6ff;
 	border-radius: 10px;
 }
 div.news-entry:hover {
 	background-color: #ccccff;
+}
+div.news-entry:last-child {
+	margin-bottom: 0px;
 }
 
 p.news-signature {
