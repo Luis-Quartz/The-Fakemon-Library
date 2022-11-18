@@ -264,7 +264,7 @@ p {
 	padding: 0px 2px 0px 2px;
 	margin: 0px 0px 15px 0px;
 }
-.nobtm {
+.bottom {
 	margin-bottom: 0px;
 }
 
@@ -287,9 +287,10 @@ p.news-signature {
 	margin-bottom: 0px;
 }
 
-.centered-title {
+.article-img {
 	margin: auto;
-	margin-top: 15px;
+	margin-top: 0px;
+	margin-bottom: 20px;
 	display: block;
 	text-align: center;
 	max-width: 100%;
