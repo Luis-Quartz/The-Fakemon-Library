@@ -148,6 +148,7 @@ article {
 	display: inline-block;
 	float: left;
 	padding: 20px;
+	padding-bottom: 0px;
 	width: calc(100% - 400px);
 	background-color: #ffffff;
 }
@@ -263,9 +264,6 @@ h1 {
 p {
 	padding: 0px 2px 0px 2px;
 	margin: 0px 0px 15px 0px;
-}
-.bottom {
-	margin-bottom: 0px;
 }
 
 div.news-entry {
