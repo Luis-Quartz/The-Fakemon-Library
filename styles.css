@@ -458,7 +458,7 @@ td {
 	text-align: center;
 }
 
-.dexlist {
+.dex-list {
 	width: 100%;
 	max-width: 500px;
 	margin: auto;
@@ -483,7 +483,7 @@ td {
 }
 
 /*Pokédex Gallery Styles========================================================================================*/
-div.gallerycontainer {
+div.galler-ycontainer {
 	display: flex;
 	flex-wrap: wrap;
 	grid-gap: 20px;
