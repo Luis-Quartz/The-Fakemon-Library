@@ -462,6 +462,7 @@ td {
 	width: 100%;
 	max-width: 500px;
 	margin: auto;
+	margin-bottom: 20px;
 }
 .col15 {
 	width: 15%;
@@ -488,6 +489,7 @@ div.gallerycontainer {
 	grid-gap: 20px;
 	justify-content: center;
 	width: 100%;
+	margin-bottom: 20px;
 }
 img.marker {
 	height: 15px;
