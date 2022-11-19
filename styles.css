@@ -275,9 +275,6 @@ div.news-entry {
 div.news-entry:hover {
 	background-color: #ccccff;
 }
-div.news-entry:last-child {
-	margin-bottom: 0px;
-}
 
 p.news-signature {
 	text-align: right;
