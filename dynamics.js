@@ -99,23 +99,24 @@ function sortTable(n, target) {
 	}
 }
 
-/*function toggleTables (target) {
-	var tablesToToggle, isToggling, tablesToggled;
-	isToggling = "on";
-	tablesToToggle = document.getElementsByClassName(target);
-		while(var i = 0; i < tablesToToggle.length; i++) {
-			tablesToToggle[i].style.display="none";
-			tablesToggled ++;
-		}
-}*/
-
 function toggleTables (tag) {
-	var tableList, switchTo;
-	switchTo = "on";
-	tableList = document.getElementsByClassName(target);
+	var tablesToToggle, toggleTo;
+	tablesToToggle = document.getElementsByClassName(tag);
+	toggleTo = document.getElementById(tag);
+	if (x.innerHTML == "Off") {
+		for(var i = 0; i < tablesToToggle.length; i++) {
+			tablesToToggle[i].style.display="none";
+		}
+		x.innerHTML = "On";
+	} else {
+		for(var i = 0; i < tablesToToggle.length; i++) {
+			tablesToToggle[i].style.display="none";
+		}
+		x.innerHTML = "Off";
+	}
 }
 
-function toggleTables (target) {
+/*function toggleTables (target) {
 	var tablesToToggle, isToggling, switchTo, tablesToggled;
 	isToggling = true;
 	tablesToggled = 0;
@@ -142,4 +143,4 @@ function toggleTables (target) {
 			isToggling = true;
 		}
 	}
-}
+}*/
