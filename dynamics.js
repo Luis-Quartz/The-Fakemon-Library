@@ -63,12 +63,10 @@ function sortTable(n, target) {
 		for (i = 1; i < (rows.length - 1); i++) {
 			// Start by saying there should be no switching:
 			shouldSwitch = false;
-			/* Get the two elements you want to compare,
-			one from current row and one from the next: */
-			x = rows[i].getElementsByTagName("TD")[n];
-			y = rows[i + 1].getElementsByTagName("TD")[n];
-			/* Check if the two rows should switch place,
-			based on the direction, asc or desc: */
+			/* Get the two elements you want to compare, one from current row and one from the next: */
+			x = rows[i].getElementsByTagName("td")[n];
+			y = rows[i + 1].getElementsByTagName("td")[n];
+			/* Check if the two rows should switch place, based on the direction, asc or desc: */
 			if (dir == "asc") {
 				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
 					// If so, mark as a switch and break the loop:
@@ -101,9 +99,39 @@ function sortTable(n, target) {
 	}
 }
 
-function toggleTables (target) {
-	var tablesToToggle = document.getElementsByClassName(target);
-		for(var i = 0; i < tablesToToggle.length; i++) {
-			tablesToToggle[i].style.visibility="hidden";
+/*function toggleTables (target) {
+	var tablesToToggle, toggling, tablesToggled;
+	toggling = "on";
+	tablesToToggle = document.getElementsByClassName(target);
+		while(var i = 0; i < tablesToToggle.length; i++) {
+			tablesToToggle[i].style.display="none";
+			tablesToggled ++;
 		}
+}*/
+
+function toggleTables (target) {
+	var tablesToToggle, toggling, switchTo, tablesToggled;
+	toggling = true;
+	switchTo = "on";
+	tablesToToggle = document.getElementsByClassName(target);
+	while (toggling) {
+		toggling = false;
+		for (var i = 0; i < tablesToToggle.length; i++) {
+			if (switchTo == "on") {
+				tablesToToggle[i].style.display="block";
+				toggling = true;
+				tablesToggled ++;
+				break;
+			}
+			else if (switchTo = "off") {
+				tablesToToggle[i].style.display="none";
+				tablesToggled ++;
+				break;
+			}
+		}
+		if (tablesToggled == 0 && switchTo == "on") {
+			switchTo = "off";
+			toggling = true;
+		}
+	}
 }
