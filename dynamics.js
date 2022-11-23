@@ -100,19 +100,19 @@ function sortTable(n, target) {
 }
 
 function toggleTables (tag) {
-	var tablesToToggle, toggleTo;
+	var tablesToToggle, btn;
 	tablesToToggle = document.getElementsByClassName(tag);
-	toggleTo = document.getElementById(tag);
-	if (x.innerHTML == "Off") {
+	btn = document.getElementById(tag);
+	if (btn.innerHTML == "Off") {
 		for(var i = 0; i < tablesToToggle.length; i++) {
 			tablesToToggle[i].style.display="none";
 		}
-		x.innerHTML = "On";
+		btn.innerHTML = "On";
 	} else {
 		for(var i = 0; i < tablesToToggle.length; i++) {
 			tablesToToggle[i].style.display="none";
 		}
-		x.innerHTML = "Off";
+		btn.innerHTML = "Off";
 	}
 }
 
