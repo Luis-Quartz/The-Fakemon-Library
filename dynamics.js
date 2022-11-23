@@ -100,3 +100,10 @@ function sortTable(n, target) {
 		}
 	}
 }
+
+function toggleTables (target) {
+	var tablesToToggle = document.getElementsByClassName(target);
+		for(var i = 0; i < tablesToToggle.length; i++) {
+			tablesToToggle[i].style.visibility="hidden";
+		}
+}
