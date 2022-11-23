@@ -103,16 +103,16 @@ function toggleTables (tag) {
 	var tablesToToggle, btn;
 	tablesToToggle = document.getElementsByClassName(tag);
 	btn = document.getElementById(tag);
-	if (btn.innerHTML == "Off") {
-		for(var i = 0; i < tablesToToggle.length; i++) {
-			tablesToToggle[i].style.display="none";
-		}
-		btn.innerHTML = "On";
-	} else {
+	if (btn.innerHTML == "On") {
 		for(var i = 0; i < tablesToToggle.length; i++) {
 			tablesToToggle[i].style.display="none";
 		}
 		btn.innerHTML = "Off";
+	} else if (btn.innerHTML == "Off") {
+		for(var i = 0; i < tablesToToggle.length; i++) {
+			tablesToToggle[i].style.display="block";
+		}
+		btn.innerHTML = "On";
 	}
 }
 
