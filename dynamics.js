@@ -100,8 +100,8 @@ function sortTable(n, target) {
 }
 
 /*function toggleTables (target) {
-	var tablesToToggle, toggling, tablesToggled;
-	toggling = "on";
+	var tablesToToggle, isToggling, tablesToggled;
+	isToggling = "on";
 	tablesToToggle = document.getElementsByClassName(target);
 		while(var i = 0; i < tablesToToggle.length; i++) {
 			tablesToToggle[i].style.display="none";
@@ -110,28 +110,29 @@ function sortTable(n, target) {
 }*/
 
 function toggleTables (target) {
-	var tablesToToggle, toggling, switchTo, tablesToggled;
-	toggling = true;
+	var tablesToToggle, isToggling, switchTo, tablesToggled;
+	isToggling = true;
 	switchTo = "on";
 	tablesToToggle = document.getElementsByClassName(target);
-	while (toggling) {
-		toggling = false;
+	while (isToggling) {
+		isToggling = false;
 		for (var i = 0; i < tablesToToggle.length; i++) {
 			if (switchTo == "on") {
 				tablesToToggle[i].style.display="block";
-				toggling = true;
+				isToggling = true;
 				tablesToggled ++;
 				break;
 			}
 			else if (switchTo = "off") {
 				tablesToToggle[i].style.display="none";
+				isToggling = true;
 				tablesToggled ++;
 				break;
 			}
 		}
 		if (tablesToggled == 0 && switchTo == "on") {
 			switchTo = "off";
-			toggling = true;
+			isToggling = true;
 		}
 	}
 }
