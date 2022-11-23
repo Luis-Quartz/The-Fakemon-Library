@@ -109,9 +109,16 @@ function sortTable(n, target) {
 		}
 }*/
 
+function toggleTables (tag) {
+	var tableList, switchTo;
+	switchTo = "on";
+	tableList = document.getElementsByClassName(target);
+}
+
 function toggleTables (target) {
 	var tablesToToggle, isToggling, switchTo, tablesToggled;
 	isToggling = true;
+	tablesToggled = 0;
 	switchTo = "on";
 	tablesToToggle = document.getElementsByClassName(target);
 	while (isToggling) {
