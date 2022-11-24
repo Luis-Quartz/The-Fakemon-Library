@@ -503,29 +503,20 @@ img.interactive {
 	cursor: pointer;
 }
 img.art {
-	max-width: 100px;
-	max-height: 100px;
-}
-table.gallery-entry {
-	display: flex;
-	flex-flow: column;
-	height: 149px;
+	max-width: 100%;
+	max-height: 100%;
 }
 th.sprh {
-	flex: 0 1 22px;
 	min-width: 218px;
-	width: 100%;
 	padding-top: 3px;
 	padding-left: 5px;
 	padding-right: 5px;
 	max-width: 320px;
 }
 td.sprf {
-	display: inline-block;
-	width: 100%;
+	height: 196px;
 	padding: 24px 24px 8px 24px;
 	vertical-align: bottom;
-	display: inline-block;
 }
 .cell50 {
 	width: 50%;
