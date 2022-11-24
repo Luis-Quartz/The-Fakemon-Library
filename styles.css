@@ -156,8 +156,8 @@ article {
 #pokegear {
 	display: inline-block;
 	float: right;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	width: 200px;
 	background-color: #f1f1f1;
 }
@@ -165,9 +165,9 @@ article {
 	height: calc(100% - 82px);
 	right: 0;
 	margin-left: 800px;
-	width: 200px;
 	margin: 0;
 	padding: 0px;
+	width: 200px;
 	background-color: #f1f1f1;
 	
 	position: absolute;
@@ -502,7 +502,14 @@ img.marker {
 img.interactive {
 	cursor: pointer;
 }
+table.gallery-entry {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	min-height: 64px;
+}
 th.sprh {
+	flex: 0 1 22px;
 	min-width: 218px;
 	padding-top: 3px;
 	padding-left: 5px;
@@ -510,9 +517,10 @@ th.sprh {
 	max-width: 320px;
 }
 td.sprf {
+	display: inline-block;
 	padding: 24px 24px 8px 24px;
-	min-height: 100%;
 	vertical-align: bottom;
+	display: inline-block;
 }
 .cell50 {
 	width: 50%;
