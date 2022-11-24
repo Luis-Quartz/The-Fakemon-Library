@@ -517,6 +517,9 @@ td.sprf {
 .cell50 {
 	width: 50%;
 }
+table.shiny {
+	display: none;
+}
 
 /*Pokédex Page Styles===========================================================================================*/
 table tr:first-child:last-child th:first-child { /*If this is the only row and this is the first cell in it, round its left corners.*/
