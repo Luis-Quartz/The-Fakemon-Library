@@ -511,7 +511,7 @@ th.sprh {
 }
 td.sprf {
 	padding: 24px 24px 8px 24px;
-	height: 100%;
+	min-height: 100%;
 	vertical-align: bottom;
 }
 .cell50 {
