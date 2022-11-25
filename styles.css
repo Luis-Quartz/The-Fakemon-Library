@@ -306,6 +306,8 @@ h2 {
 	text-align: center;
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
+	border-radius: 10px;
+	background-color: #f75047;
 }
 
 a {
@@ -580,6 +582,8 @@ h3 {
 	margin: 0px 0px 5px 0px;
 	padding: 0px;
 	font-size: 16pt;
+	border-radius: 10px;
+	background-color: #fc7d76;
 }
 table.dex {
 	width: 320px;
