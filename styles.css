@@ -186,7 +186,8 @@ article {
 	margin-bottom: 5px;
 }
 .bartext {
-	padding-bottom: 5px;
+	padding: 0px;
+	margin-bottom: 5px;
 }
 hr.barline {
 	border: 1px dashed;
