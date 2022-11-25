@@ -36,9 +36,21 @@ function toggleBar(id) {
 	}
 }
 
-function flipSprite(spr, front, back, tex) {
+function stylizeTypes() {
+	var typeP, i;
+	typeP = document.getElementsByClassName("type");
+	for (i = 0; i < (typeP.length); i++) {
+		if (typeP.[i].innerHTML == "???") {
+			typeP[i].className = "type qqq";
+		}
+		else {
+			typeP[i].className = "type " + typeP[i].innerHTML;
+		}
+	}
+}
+
+function flipSprite(spr, front, back) {
 	var sp = document.getElementById(spr);
-	var tx = document.getElementById(tex);
 	if (sp.title == "Front") {
 		sp.src = back;
 		sp.title = "Back";
@@ -115,32 +127,3 @@ function toggleTables (tag) {
 		btn.innerHTML = "On";
 	}
 }
-
-/*function toggleTables (target) {
-	var tablesToToggle, isToggling, switchTo, tablesToggled;
-	isToggling = true;
-	tablesToggled = 0;
-	switchTo = "on";
-	tablesToToggle = document.getElementsByClassName(target);
-	while (isToggling) {
-		isToggling = false;
-		for (var i = 0; i < tablesToToggle.length; i++) {
-			if (switchTo == "on") {
-				tablesToToggle[i].style.display="block";
-				isToggling = true;
-				tablesToggled ++;
-				break;
-			}
-			else if (switchTo = "off") {
-				tablesToToggle[i].style.display="none";
-				isToggling = true;
-				tablesToggled ++;
-				break;
-			}
-		}
-		if (tablesToggled == 0 && switchTo == "on") {
-			switchTo = "off";
-			isToggling = true;
-		}
-	}
-}*/
