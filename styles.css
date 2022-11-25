@@ -176,6 +176,7 @@ article {
 
 .centered {
 	margin: auto;
+	margin-bottom: 15px;
 	display: block;
 	text-align: center;
 }
