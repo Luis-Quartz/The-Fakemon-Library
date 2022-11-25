@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<link rel="shortcut icon" href="/Resources/Icon.png">
+		<title>PokéGod List | The Fakemon Library</title>
+		<link rel="stylesheet" href="/styles.css">
+		<script src="/dynamics.js"></script>
+		<meta name="viewport" content="width=device-width"/>
+		<meta name="description" content="The Fakemon Library is a project dedicated to documenting and archiving as many fan-made Pokémon as possible while maintaining consistent quality and presentation."/>
+	</head>
+
+	<body>
+	
+		<div id="page">
+		
+			<header include-html="/header.html">
+			</header>
+			
+			<div id="main-div">
+			
+				<div id="pokenav" include-html="/navbar.html">
+				</div>
+				
+				<div id="pokenav-mobile" include-html="/navbar.html" style="display: none;">
+				</div>
+				
+				<article>
+				
+					<h1>PokéGod List</h1>
+					
+					<p>Many PokéGods were rumored to exist, with different methods on how to obtain them.</p>
+					
+					<p>This page lists all the PokéGods that I'm aware of, separated by group.</p>
+					
+					<h2>Evolutions of Existing Pokémon</h2>
+					
+					<table id="dexlist1" class="dex-list">
+					
+						<tr>
+							<th class="col15 sortable" onclick="sortTable(0, 'dexlist1')">
+								No.
+							</th>
+							<th colspan=2 class="sortable" onclick="sortTable(1, 'dexlist1')">
+								Pokémon
+							</th>
+							<th class="col30 sortable" onclick="sortTable(3, 'dexlist1')">
+								Type
+							</th>
+						</tr>
+						
+						<tr>
+							<td>
+								001
+							</td>
+							<td class="col15">
+								<img src="/Resources/UnknownIcon.png" class="icon"></img>
+							</td>
+							<td class="col40 leftalign">
+								<a href="Pokédex/Sapusaur.html">
+									Sapusaur
+								</a>
+							</td>
+							<td>
+								<p class="type Grass">Grass</p>
+								<p class="type Poison">Poison</p>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								002
+							</td>
+							<td>
+								<img src="/Resources/UnknownIcon.png" class="icon"></img>
+							</td>
+							<td class="leftalign">
+								<a href="Pokédex/Denpecha.html">
+									Charcolt
+								</a>
+							</td>
+							<td>
+								<p class="type Fire">Fire</p>
+								<p class="type Flying">Flying</p>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								003
+							</td>
+							<td>
+								<img src="/Resources/UnknownIcon.png" class="icon"></img>
+							</td>
+							<td class="leftalign">
+								<a href="Pokédex/Rainer.html">
+									Rainer
+								</a>
+							</td>
+							<td>
+								<p class="type Water">Water</p>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								004
+							</td>
+							<td>
+								<img src="/Resources/UnknownIcon.png" class="icon"></img>
+							</td>
+							<td class="leftalign">
+								<a href="Pokédex/Locustod.html">
+									Locustod
+								</a>
+							</td>
+							<td>
+								<p class="type Bug">Bug</p>
+								<p class="type Flying">Flying</p>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								005
+							</td>
+							<td>
+								<img src="/Resources/UnknownIcon.png" class="icon"></img>
+							</td>
+							<td class="leftalign">
+								<a href="Pokédex/Beepin.html">
+									Beepin
+								</a>
+							</td>
+							<td>
+								<p class="type Bug">Bug</p>
+								<p class="type Poison">Poison</p>
+							</td>
+						</tr>
+					
+					<h2>Fusions of Existing Pokémon</h2>
+					
+					<table id="dexlist2" class="dex-list">
+					
+						<tr>
+							<th class="col15 sortable" onclick="sortTable(0, 'dexlist2')">
+								No.
+							</th>
+							<th colspan=2 class="sortable" onclick="sortTable(1, 'dexlist2')">
+								Pokémon
+							</th>
+							<th class="col30 sortable" onclick="sortTable(3, 'dexlist2')">
+								Type
+							</th>
+						</tr>
+						
+						<tr>
+							<td>
+								F-001
+							</td>
+							<td>
+								<img src="/Resources/UnknownIcon.png" class="icon"></img>
+							</td>
+							<td class="leftalign">
+								<a href="Pokédex/Venustoise.html">
+									Venustoise
+								</a>
+							</td>
+							<td>
+								<p class="type Grass">Grass</p>
+								<p class="type Water">Water</p>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								F-002
+							</td>
+							<td>
+								<img src="Icons/ChapebayaAlolan.png" class="icon"></img>
+							</td>
+							<td class="leftalign">
+								<a href="Pokédex/Zapmolcuno.html">
+									Zapmolcuno
+								</a>
+							</td>
+							<td>
+								<p class="type QQQ">???</p>
+								<p class="type Flying">Flying</p>
+							</td>
+						</tr>
+						
+					</table>
+					
+				</article>
+				
+				<div id="pokegear" include-html="sidebar.html">
+				</div>
+				
+				<div id="pokegear-mobile" include-html="sidebar.html" style="display: none;">
+				</div>
+				
+			</div>
+			
+			<footer include-html="/footer.html">
+			</footer>
+		
+		</div>
+		
+		<script>
+			includeHTML();
+		</script>
+		
+	</body>
+</html>
