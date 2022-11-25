@@ -40,7 +40,7 @@ function stylizeTypes() {
 	var typeP, i;
 	typeP = document.getElementsByClassName("type");
 	for (i = 0; i < (typeP.length); i++) {
-		if (typeP.[i].innerText == "???") {
+		if (typeP[i].innerText == "???") {
 			typeP[i].className = "type qqq";
 		}
 		else {
