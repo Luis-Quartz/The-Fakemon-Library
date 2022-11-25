@@ -40,11 +40,11 @@ function stylizeTypes() {
 	var typeP, i;
 	typeP = document.getElementsByClassName("type");
 	for (i = 0; i < (typeP.length); i++) {
-		if (typeP.[i].innerHTML == "???") {
+		if (typeP.[i].innerText == "???") {
 			typeP[i].className = "type qqq";
 		}
 		else {
-			typeP[i].className = "type " + typeP[i].innerHTML;
+			typeP[i].className = "type " + typeP[i].innerText;
 		}
 	}
 }
