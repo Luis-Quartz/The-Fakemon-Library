@@ -459,9 +459,6 @@ table tr:first-child:last-child td:first-child:last-child { /*If the cell is the
 th{
 	background-color: #dedef0;
 }
-th.sortable:hover {
-	cursor: pointer;
-}
 td {
 	background-color: #fcfcff;
 	text-align: center;
