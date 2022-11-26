@@ -36,10 +36,20 @@ function toggleBar(id) {
 	}
 }
 
+function insertIcons() {
+	var dexIcons, i;
+	dexIcons = document.getElementsByClassName("dex-icons");
+	for (i = 0; i < (dexIcons.length); i++) {
+		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
+	}
+}
+
 function insertLinks() {
 	var dexLinks, i;
+	dexIcons = document.getElementsByClassName("dex-icon");
 	dexLinks = document.getElementsByClassName("dex-link");
 	for (i = 0; i < (dexLinks.length); i++) {
+		dexIcons[i].src = "Icons/" + dexLinks[i].innerText + ".png";
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 	}
 }
