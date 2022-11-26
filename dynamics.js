@@ -42,7 +42,7 @@ function insertLinks() {
 	for (i = 0; i < (dexLinks.length); i++) {
 		var str = dexLinks[i].innerText;
 		var srtOut = str.replace(/[^a-zA-Z0-9]/g, '');
-		dexLinks[i].href = "Pokédex/" + strOut + ".html"
+		dexLinks[i].href = "Pokédex/" + strOut + ".html";
 	}
 }
 
