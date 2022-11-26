@@ -44,8 +44,8 @@ function insertIcons() {
 	}
 }
 
-function insertLinks() {
-	var dexLinks, i;
+function insertDexElements() {
+	var dexLinks, dexIcons, i;
 	dexIcons = document.getElementsByClassName("dex-icon");
 	dexLinks = document.getElementsByClassName("dex-link");
 	for (i = 0; i < (dexLinks.length); i++) {
