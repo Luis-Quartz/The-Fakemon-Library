@@ -57,7 +57,7 @@ function insertGalleryElements() {
 		sprId = dexLinks[i].innerText;
 		sprFront = 'Sprites/' + dexLinks[i].innerText + '.png';
 		sprBack = 'Sprites/' + dexLinks[i].innerText + '-back.png';
-		dexSprites[i].addEventListener('click', flipSprite(sprId, front, back));
+		dexSprites[i].addEventListener('click', flipSprite(sprId, sprFront, sprBack));
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 	}
 }
