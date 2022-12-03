@@ -36,20 +36,24 @@ function toggleBar(id) {
 	}
 }
 
-function insertIcons() {
-	var dexIcons, i;
-	dexIcons = document.getElementsByClassName("dex-icons");
-	for (i = 0; i < (dexIcons.length); i++) {
-		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
-	}
-}
-
 function insertDexElements() {
 	var dexLinks, dexIcons, i;
 	dexIcons = document.getElementsByClassName("dex-icon");
 	dexLinks = document.getElementsByClassName("dex-link");
 	for (i = 0; i < (dexLinks.length); i++) {
 		dexIcons[i].src = "Icons/" + dexLinks[i].innerText + ".png";
+		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
+	}
+}
+
+function insertGalleryElements() {
+	var dexLinks, dexSprites, i;
+	dexSprites = document.getElementsByClassName("dex-sprite");
+	dexLinks = document.getElementsByClassName("dex-link");
+	for (i = 0; i < (dexLinks.length); i++) {
+		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
+		dexSprites[i].id = dexLinks[i].innerText;
+		dexSprites[i].onClick = "flipSprite('" + dexLinks[i].innerText +", 'Sprites/" + dexLinks[i].innerText + ".png', 'Sprites/" + dexLinks[i].innerText + "-back.png')";
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 	}
 }
