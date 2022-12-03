@@ -53,7 +53,11 @@ function insertGalleryElements() {
 	for (i = 0; i < (dexLinks.length); i++) {
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 		dexSprites[i].id = dexLinks[i].innerText;
-		dexSprites[i].onclick = "flipSprite('" + dexLinks[i].innerText +", 'Sprites/" + dexLinks[i].innerText + ".png', 'Sprites/" + dexLinks[i].innerText + "-back.png')";
+		funStr = "flipSprite('" + dexLinks[i].innerText +", 'Sprites/" + dexLinks[i].innerText + ".png', 'Sprites/" + dexLinks[i].innerText + "-back.png')";
+		sprId = dexLinks[i].innerText;
+		sprFront = 'Sprites/' + dexLinks[i].innerText + '.png';
+		sprBack = 'Sprites/' + dexLinks[i].innerText + '-back.png';
+		dexSprites[i].addEventListener('click', flipSprite(sprId, front, back));
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 	}
 }
