@@ -53,7 +53,8 @@ function insertGalleryElements() {
 	for (i = 0; i < (dexLinks.length); i++) {
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 		dexSprites[i].id = dexLinks[i].innerText;
-		dexSprites[i].setAttribute('onclick', "flipSprite(" + dexLinks[i].innerText + ", Sprites/" + dexLinks[i].innerText + ".png', 'Sprites/" + dexLinks[i].innerText + "-back.png')");
+		flipFun = "flipSprite(" + dexLinks[i].innerText + ", Sprites/" + dexLinks[i].innerText + ".png', 'Sprites/" + dexLinks[i].innerText + "-back.png')";
+		dexSprites[i].setAttribute('onclick', flipFun);
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html)";
 	}
 }
