@@ -263,11 +263,28 @@ h1 {
 	font-size: 20pt;
 }
 
+h2 {
+	font-size: 18pt;
+	text-align: center;
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	border-radius: 10px;
+	background-color: #ff8576;
+}
+
 p {
 	padding: 0px 2px 0px 2px;
 	margin: 0px 0px 15px 0px;
 }
 
+h2.news-header {
+	font-size: 18pt;
+	text-align: center;
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	border-radius: 10px;
+	background-color: #9191ff;
+}
 div.news-entry {
 	padding: 20px;
 	margin: 0px 0px 20px 0px;
@@ -301,15 +318,6 @@ p.news-signature {
 	float: left;
 	margin: 0px 10px 10px 0px;
 	max-width: 45%;
-}
-
-h2 {
-	font-size: 18pt;
-	text-align: center;
-	margin: 0px 0px 15px 0px;
-	padding: 0px;
-	border-radius: 10px;
-	background-color: #fc7050;
 }
 
 a {
@@ -582,7 +590,7 @@ h3 {
 	padding: 0px;
 	font-size: 16pt;
 	border-radius: 10px;
-	background-color: #f99c86;
+	background-color: #ff9e91;
 }
 table.dex {
 	width: 320px;
