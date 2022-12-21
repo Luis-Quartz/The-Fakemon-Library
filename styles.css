@@ -274,7 +274,7 @@ h2 {
 
 h3 {
 	text-align: center;
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 15px 0px;
 	padding: 2px 7px;
 	font-size: 16pt;
 	border-radius: 10px;
@@ -743,7 +743,8 @@ img.shape {
 }
 
 h4 {
+	font-size: 12pt;
 	text-align: center;
-	margin: 0px 0px 2px 0px;
+	margin: 0px 0px 15px 0px;
 	font-size: 14pt;
 }
