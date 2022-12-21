@@ -472,7 +472,7 @@ td {
 	text-align: center;
 }
 
-.dex-list {
+table.dex-list {
 	width: 100%;
 	max-width: 500px;
 	margin: auto;
@@ -568,22 +568,20 @@ td.banner {
 th.familyheader {
 	color: #f7c03d;
 	padding: 3px 0 3px 0;
+	margin-bottom: 0px;
 	background-color: #151515;
 	font-size: 15pt;
 }
 p.familyentry {
 	margin: 8px;
 }
+
 th.species {
 	color: white;
 	padding: 3px 0 3px 0;
+	margin-bottom: 0px;
 	background-color: #e82a23;
 	font-size: 15pt;
-}
-
-hr {
-	border: 1px dashed;
-	margin-top: 20px;
 }
 
 h3 {
@@ -595,6 +593,12 @@ h3 {
 	background-color: #ffc0b7;
 }
 
+table.dex-data {
+	width: 100%;
+	max-width: 368px;
+	margin: auto;
+	margin-bottom: 20px;
+}
 th.dexh {
 	width: 35%;
 }
