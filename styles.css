@@ -256,7 +256,7 @@ p.footer {
 	}
 }
 
-/*Pokédex List Styles========================================================================================================*/
+/*Front and General Page Styles=============================================================================*/
 h1 {
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
@@ -301,6 +301,22 @@ p.news-signature {
 	margin-bottom: 0px;
 }
 
+table {
+	border: 1px solid #0a0a0a;
+	border-radius: 10px;
+	background-color: #8888a2;
+	padding: 2px;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/*Article Styles==================================================================================="*/
+
 .article-img {
 	margin: auto;
 	margin-top: 0px;
@@ -320,12 +336,7 @@ p.news-signature {
 	max-width: 45%;
 }
 
-a {
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
+/*Dex List Styles=======================================================================*/
 
 p.data {
 	margin: 0px;
@@ -419,12 +430,6 @@ p.Crystal {
 	background-color: #5adcfa;
 }
 
-table {
-	border: 1px solid #0a0a0a;
-	border-radius: 10px;
-	background-color: #8888a2;
-	padding: 2px;
-}
 table tr:first-child th:first-child { /*Round top-left border if it's the first row of the first column.*/
 	border-radius: 10px 0 0 0;
 }
