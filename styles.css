@@ -551,6 +551,7 @@ table tr:first-child td:first-child:last-child { /*If this is the first row and 
 
 .full {
 	width: 100%;
+	margin-bottom: 20px;
 }
 .col35 {
 	width: 35%;
@@ -563,6 +564,7 @@ td.banner {
 	padding-left: 7px;
 	padding-right: 7px;
 }
+
 th.familyheader {
 	color: #f7c03d;
 	padding: 3px 0 3px 0;
@@ -592,9 +594,7 @@ h3 {
 	border-radius: 10px;
 	background-color: #ffc0b7;
 }
-table.dex {
-	width: 320px;
-}
+
 th.dexh {
 	width: 35%;
 }
