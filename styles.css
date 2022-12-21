@@ -598,6 +598,10 @@ th.species {
 	font-size: 15pt;
 }
 
+div.table-array-unit {
+	min-width: 388px;
+}
+
 table.dex-sprite{
 	margin: auto;
 }
