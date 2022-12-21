@@ -272,6 +272,15 @@ h2 {
 	background-color: #ff8576;
 }
 
+h3 {
+	text-align: center;
+	margin: 0px 0px 20px 0px;
+	padding: 2px 7px;
+	font-size: 16pt;
+	border-radius: 10px;
+	background-color: #ffc0b7;
+}
+
 p {
 	padding: 0px 2px 0px 2px;
 	margin: 0px 0px 15px 0px;
@@ -587,15 +596,6 @@ th.species {
 	margin-bottom: 0px;
 	background-color: #e82a23;
 	font-size: 15pt;
-}
-
-h3 {
-	text-align: center;
-	margin: 0px 0px 20px 0px;
-	padding: 0px;
-	font-size: 16pt;
-	border-radius: 10px;
-	background-color: #ffc0b7;
 }
 
 table.dex-data {
