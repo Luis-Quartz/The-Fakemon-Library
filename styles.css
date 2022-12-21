@@ -598,6 +598,10 @@ th.species {
 	font-size: 15pt;
 }
 
+table.dex-sprite{
+	margin: auto;
+}
+
 table.dex-data {
 	width: 100%;
 	max-width: 368px;
