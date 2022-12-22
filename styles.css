@@ -600,6 +600,7 @@ th.species {
 }
 
 div.table-array {
+	max-width: 100%;
 }
 
 table.dex-sprite{
