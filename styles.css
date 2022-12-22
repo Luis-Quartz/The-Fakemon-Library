@@ -516,7 +516,7 @@ div.gallery-container {
 	flex-wrap: wrap;
 	grid-gap: 20px;
 	justify-content: center;
-	width: 100%;
+	max-width: 100%;
 	margin-bottom: 20px;
 }
 img.marker {
@@ -600,8 +600,6 @@ th.species {
 }
 
 div.table-array {
-	max-width: 100%;
-	display: inline-block;
 }
 
 table.dex-sprite{
