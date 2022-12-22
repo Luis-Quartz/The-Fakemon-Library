@@ -612,7 +612,6 @@ table.dex-sprite{
 table.dex-data {
 	width: 100%;
 	max-width: 350px;
-	margin: auto;
 }
 th.dexh {
 	width: 35%;
