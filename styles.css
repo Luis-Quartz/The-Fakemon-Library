@@ -742,6 +742,10 @@ img.shape {
 	width: 75%;
 }
 
+.col15 {
+	width: 15%;
+}
+
 h4 {
 	font-size: 12pt;
 	text-align: center;
