@@ -273,10 +273,10 @@ h2 {
 }
 
 h3 {
+	font-size: 16pt;
 	text-align: center;
 	margin: 0px 0px 15px 0px;
 	padding: 2px 7px;
-	font-size: 16pt;
 	border-radius: 10px;
 	background-color: #ffc0b7;
 }
@@ -728,7 +728,12 @@ td.total {
 	background-repeat: no-repeat;
 }
 
-td.dexpage {
+
+table.dex-page {
+	width: 100%;
+	max-width: 368px;
+}
+td.dex-page {
 	text-align: left;
 	padding: 5px;
 }
