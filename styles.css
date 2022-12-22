@@ -607,8 +607,8 @@ table.dex-sprite{
 }
 
 table.dex-data {
-	width: 100%;
-	max-width: 368px;
+	max-width: 100%;
+	width: 368px;
 }
 th.dexh {
 	width: 35%;
