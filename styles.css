@@ -599,6 +599,10 @@ th.species {
 	font-size: 15pt;
 }
 
+div.table-array-section {
+	width: 720px;
+}
+
 div.table-array-unit {
 	width: 350px;
 }
