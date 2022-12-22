@@ -604,7 +604,8 @@ div.table-array {
 }
 
 table.dex-sprite{
-	margin: auto;
+	max-width: 100%;
+	width: 368px;
 }
 
 table.dex-data {
