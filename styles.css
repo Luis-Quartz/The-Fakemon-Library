@@ -516,7 +516,7 @@ div.gallery-container {
 	flex-wrap: wrap;
 	grid-gap: 20px;
 	justify-content: center;
-	max-width: 100%;
+	width: 100%;
 	margin-bottom: 20px;
 }
 img.marker {
