@@ -611,7 +611,7 @@ table.dex-sprite{
 
 table.dex-data {
 	width: 100%;
-	max-width: 350px;
+	max-width: 368px;
 }
 th.dexh {
 	width: 35%;
@@ -730,10 +730,6 @@ td.total {
 	background-repeat: no-repeat;
 }
 
-table.dex-page {
-	width: 100%;
-	max-width: 368px;
-}
 td.dex-page {
 	text-align: left;
 	padding: 5px;
