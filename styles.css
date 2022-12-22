@@ -601,6 +601,7 @@ th.species {
 
 div.table-array {
 	max-width: 100%;
+	display: inline-block;
 }
 
 table.dex-sprite{
