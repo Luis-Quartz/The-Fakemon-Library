@@ -55,7 +55,7 @@ function insertGalleryElements() {
 		dexSprites[i].id = dexLinks[i].innerText;
 		flipFun = "flipSprite('" + dexLinks[i].innerText + "', 'Sprites/" + dexLinks[i].innerText + ".png', 'Sprites/" + dexLinks[i].innerText + "-back.png')";
 		dexSprites[i].setAttribute('onclick', flipFun);
-		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html)";
+		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 	}
 }
 
