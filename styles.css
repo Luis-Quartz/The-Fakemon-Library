@@ -579,10 +579,12 @@ td.banner {
 	padding-right: 7px;
 }
 
+h1.tableh {
+	margin-bottom: 0px;
+}
 th.familyheader {
 	color: #f7c03d;
 	padding: 3px 0 3px 0;
-	margin-bottom: 0px;
 	background-color: #151515;
 	font-size: 15pt;
 }
@@ -593,7 +595,6 @@ p.familyentry {
 th.species {
 	color: white;
 	padding: 3px 0 3px 0;
-	margin-bottom: 0px;
 	background-color: #e82a23;
 	font-size: 15pt;
 }
@@ -727,7 +728,6 @@ td.total {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
 
 table.dex-page {
 	width: 100%;
