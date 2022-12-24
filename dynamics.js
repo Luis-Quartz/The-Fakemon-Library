@@ -36,12 +36,25 @@ function toggleBar(id) {
 	}
 }
 
-function insertDexElements() {
+function insertDexElements(ft) {
 	var dexLinks, dexIcons, i;
 	dexIcons = document.getElementsByClassName("dex-icon");
 	dexLinks = document.getElementsByClassName("dex-link");
 	for (i = 0; i < (dexLinks.length); i++) {
-		dexIcons[i].src = "Icons/" + dexLinks[i].innerText + ".png";
+		
+		var reader = new XMLHttpRequest();
+		source = "Icons/" + dexLinks[i].innerText + "." + ft
+		reader.open('get', source, true);
+		if (reader.readyState === 4) {
+			if ((reader.status == 200) || (reader.status == 0)) {
+				dexIcons[i].src = source;
+			}
+			else {
+				dexIcons[i].src = "/Resources/Unknown-Icon.png";
+			}
+		}
+		//dexIcons[i].src = "Icons/" + dexLinks[i].innerText + "." + ft;
+		
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 	}
 }
