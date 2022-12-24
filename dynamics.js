@@ -69,14 +69,15 @@ function stylizeTypes() {
 	var typeP, i;
 	typeP = document.getElementsByClassName("type");
 	for (i = 0; i < (typeP.length); i++) {
-		if (typeP[i].innerText == "???") {
-			typeP[i].className = "type qqq";
-		}
-		else if (typeP[i].innerText == "Unknown") {
-			typeP[i].className = "";
-		}
-		else {
-			typeP[i].className = "type " + typeP[i].innerText;
+		switch (typeP.innerText) {
+			case "???":
+				typeP[i].className = "type qqq";
+				break;
+			case "Unknown":
+				typeP[i].className = "";
+				break;
+			default:
+				typeP[i].className = "type " + typeP[i].innerText;
 		}
 	}
 }
