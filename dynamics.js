@@ -41,8 +41,14 @@ function insertDexElements() {
 	dexIcons = document.getElementsByClassName("dex-icon");
 	dexLinks = document.getElementsByClassName("dex-link");
 	for (i = 0; i < (dexLinks.length); i++) {
-		dexIcons[i].src = "Icons/" + dexLinks[i].innerText + ".png";
-		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
+		if (dexLinks[i].innerText == "------------") {
+			dexIcons[i].src = "/Resources/Unknown-Icon.png";
+			dexLinks[i].href = "#";
+		}
+		else {
+			dexIcons[i].src = "Icons/" + dexLinks[i].innerText + ".png";
+			dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
+		}
 	}
 }
 
@@ -65,6 +71,9 @@ function stylizeTypes() {
 	for (i = 0; i < (typeP.length); i++) {
 		if (typeP[i].innerText == "???") {
 			typeP[i].className = "type qqq";
+		}
+		else if (typeP[i].innerText == "Unknown") {
+			typeP[i].className = "";
 		}
 		else {
 			typeP[i].className = "type " + typeP[i].innerText;
