@@ -71,7 +71,7 @@ function stylizeTypes() {
 	for (i = 0; i < (typeP.length); i++) {
 		switch (typeP[i].innerText) {
 			case "Unknown":
-				typeP[i].className = "";
+				typeP[i].className = "unknown";
 				break;
 			case "???":
 				typeP[i].className = "type qqq";
