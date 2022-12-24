@@ -70,9 +70,6 @@ function stylizeTypes() {
 	typeP = document.getElementsByClassName("type");
 	for (i = 0; i < (typeP.length); i++) {
 		switch (typeP[i].innerText) {
-			case "Unknown":
-				typeP[i].className = "unknown";
-				break;
 			case "???":
 				typeP[i].className = "type qqq";
 				break;
