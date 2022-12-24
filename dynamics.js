@@ -69,12 +69,12 @@ function stylizeTypes() {
 	var typeP, i;
 	typeP = document.getElementsByClassName("type");
 	for (i = 0; i < (typeP.length); i++) {
-		switch (typeP.innerText) {
-			case "???":
-				typeP[i].className = "type qqq";
-				break;
+		switch (typeP[i].innerText) {
 			case "Unknown":
 				typeP[i].className = "";
+				break;
+			case "???":
+				typeP[i].className = "type qqq";
 				break;
 			default:
 				typeP[i].className = "type " + typeP[i].innerText;
