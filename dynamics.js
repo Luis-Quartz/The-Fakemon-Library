@@ -58,6 +58,16 @@ function insertGalleryElements() {
 	dexLinks = document.getElementsByClassName("dex-link");
 	for (i = 0; i < (dexLinks.length); i++) {
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
+		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
+	}
+}
+
+function insertGalleryElementsGoner() {
+	var dexLinks, dexSprites, i;
+	dexSprites = document.getElementsByClassName("dex-sprite");
+	dexLinks = document.getElementsByClassName("dex-link");
+	for (i = 0; i < (dexLinks.length); i++) {
+		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 		dexSprites[i].id = dexLinks[i].innerText;
 		flipFun = "flipSprite('" + dexLinks[i].innerText + "', 'Sprites/" + dexLinks[i].innerText + ".png', 'Sprites/" + dexLinks[i].innerText + "-back.png')";
 		dexSprites[i].setAttribute('onclick', flipFun);
