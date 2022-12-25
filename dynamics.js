@@ -54,12 +54,13 @@ function insertDexElements() {
 
 function insertGalleryElements() {
 	var dexLinks, dexSprites, i;
-	dexSprites = document.getElementsByClassName("dex-sprite");
 	dexLinks = document.getElementsByClassName("dex-link");
+	dexSprites = document.getElementsByClassName("dex-sprite");
+	sprLinks = document.getElementsByClassName("spr-link");
 	for (i = 0; i < (dexLinks.length); i++) {
-		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
-		dexSprites[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
+		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
+		sprLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 	}
 }
 
@@ -67,6 +68,7 @@ function insertGalleryElementsGoner() {
 	var dexLinks, dexSprites, i;
 	dexSprites = document.getElementsByClassName("dex-sprite");
 	dexLinks = document.getElementsByClassName("dex-link");
+	
 	for (i = 0; i < (dexLinks.length); i++) {
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 		dexSprites[i].id = dexLinks[i].innerText;
