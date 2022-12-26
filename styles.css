@@ -537,6 +537,7 @@ img.art {
 	max-height: 100%;
 }
 th.sprh {
+	text-align: left;
 	min-width: 218px;
 	height: 22px;
 	padding-top: 3px;
