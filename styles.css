@@ -351,98 +351,122 @@ p.data {
 	margin: 0px;
 }
 .nkdf {
-	color: white;
 	font-style: italic;
 	text-decoration: underline;
 	text-decoration-color: white;
-	background-color: black;
 }
 p.type {
 	text-align: center;
-	color: white;
 	border-radius: 7px;
 	margin: 2px;
 	padding: 1px;
 }
 p.Fire {
+	color: white;
 	background-color: #f05a32;
 }
 p.Water {
+	color: white;
 	background-color: #6991f0;
 }
 p.Electric {
+	color: white;
 	background-color: #fad232;
 }
 p.Grass {
+	color: white;
 	background-color: #78c850;
 }
 p.Ice {
+	color: white;
 	background-color: #96d7d7;
 }
 p.Fighting {
+	color: white;
 	background-color: #be3c28;
 }
 p.Poison {
+	color: white;
 	background-color: #a041a0;
 }
 p.Ground {
+	color: white;
 	background-color: #e1be69;
 }
 p.Flying {
+	color: white;
 	background-color: #aa91f0;
 }
 p.Psychic {
+	color: white;
 	background-color: #fa5a87;
 }
 p.Bug {
+	color: white;
 	background-color: #9bb91e;
 }
 p.Rock {
+	color: white;
 	background-color: #b9a037;
 }
 p.Ghost {
+	color: white;
 	background-color: #6e5a96;
 }
 p.Dragon {
+	color: white;
 	background-color: #6e37fa;
 }
 p.Dark {
+	color: white;
 	background-color: #464650;
 }
 p.Steel {
+	color: white;
 	background-color: #b9b9d2;
 }
 p.Fairy {
+	color: white;
 	background-color: #f096aa;
 }
 p.Normal {
+	color: white;
 	background-color: #aaaa82;
 }
 p.qqq {
+	color: white;
 	background-color: #73a596;
 }
 p.Shadow {
+	color: white;
 	background-color: #5d1616;
 }
 p.Nuclear {
+	color: white;
 	background-color: #50f546;
 }
 p.Light {
+	color: white;
 	background-color: #d2d282;
 }
 p.Sound {
+	color: white;
 	background-color: #697873;
 }
 p.Magic {
+	color: white;
 	background-color: #9147c5;
 }
 p.Digital {
+	color: white;
 	background-color: #46cdaf;
 }
 p.Cosmic {
+	color: white;
 	background-color: #500a82;
 }
 p.Crystal {
+	color: white;
 	background-color: #5adcfa;
 }
 
