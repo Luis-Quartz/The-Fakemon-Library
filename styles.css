@@ -28,6 +28,7 @@ header {
 	background-color: #fa543f;
 	padding: 15px;
 	margin: 0px;
+	min-height: 82px;
 }
 #header-full {
 	display: flex;
@@ -45,7 +46,6 @@ header {
 	gap: 20px;
 	text-align: center;
 	width: 100%;
-	min-height: 82px;
 	
 	position: fixed;
 	margin: 0px;
