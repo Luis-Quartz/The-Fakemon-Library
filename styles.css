@@ -165,13 +165,12 @@ article {
 #pokegear-mobile {
 	height: calc(100% - 82px);
 	right: 0;
-	margin-left: 800px;
 	margin: 0;
 	padding: 0px;
 	width: 200px;
 	background-color: #f1f1f1;
 	
-	position: sticky;
+	position: fixed;
 	overflow-y: scroll;
 }
 
