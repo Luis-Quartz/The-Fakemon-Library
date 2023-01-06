@@ -44,11 +44,12 @@ header {
 	display: flex;
 	background-color: #fa543f;
 	justify-content: space-between;
-	gap: 20px;
 	text-align: center;
 	width: 100%;
 	
 	position: fixed;
+	top: 0px;
+	left: 0px;
 	margin: 0px;
 	padding: 0px;
 }
