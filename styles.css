@@ -106,13 +106,13 @@ img.float-center {
 #pokenav-mobile {
 	height: calc(100% - 82px);
 	float: left;
-	top: 82px;
 	width: 200px;
 	margin: 0;
 	padding: 0px;
 	background-color: #f1f1f1;
 	
 	position: fixed;
+	top: 82px;
 	overflow-y: scroll;
 }
 
