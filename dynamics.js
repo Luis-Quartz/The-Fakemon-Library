@@ -96,7 +96,7 @@ function showError() {
 	)
 	var gonerMessage = items[Math.floor(Math.random()*gonerMessages.length)];
 	gonerP = document.getElementByClassName("goner-p");
-	gonerP.innerText + item;
+	gonerP.innerText = gonerMessage;
 }
 
 function stylizeTypes() {
