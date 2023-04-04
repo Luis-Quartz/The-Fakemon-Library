@@ -225,7 +225,7 @@ p.footer {
 
 /*Screen Response-----------------------------------------------------------------------*/
 
-@media only screen and (max-width: 770px) { /*What to do when screen is or becomes too small*/
+@media only screen and (max-width: 920px) { /*What to do when window is or becomes too small*/
 	#header-full {
 		display: none;
 	}
@@ -247,7 +247,7 @@ p.footer {
 	}
 }
 
-@media only screen and (min-width: 771px) { /*What to do if screen becomes large enough*/
+@media only screen and (min-width: 921px) { /*What to do when window is or becomes large enough*/
 	#header-mobile {
 		display: none;
 	}
