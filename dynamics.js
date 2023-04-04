@@ -89,11 +89,12 @@ function showError() {
 		"I think it's coming for me.",
 		"When I think about it, you, too, are all alone in the world.",
 		"L is real 2401.",
-		"Can anyone hear me? Help..."
+		"Can anyone hear me? Help...",
+		"Have you ever thought of a world where everything is exactly the same... except you don't exist?"
 	)
 	var gonerMessage = items[Math.floor(Math.random()*gonerMessages.length)];
 	gonerP = document.getElementByClassName("goner-p");
-	gonerP.innerText = item;
+	gonerP.innerText + item;
 }
 
 function stylizeTypes() {
