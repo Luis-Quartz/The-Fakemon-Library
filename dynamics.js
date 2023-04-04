@@ -94,9 +94,14 @@ function showError() {
 		"Well, there was not a man here.",
 		"Have you ever thought of a world where everything is exactly the same... except you don't exist?"
 	)
-	var gonerMessage = items[Math.floor(Math.random()*gonerMessages.length)];
+	var gonerMessage = gonerMessages[Math.floor(Math.random()*gonerMessages.length)];
 	gonerP = document.getElementByClassName("goner-p");
 	gonerP.innerText = gonerMessage;
+	shiny = Math.floor(Math.random() * 10) + 1
+	if (shiny == 1) {
+		gonerI = document.getElementByClassName("article-img");
+		gonerI.src = "/Resources/Giratina-Origin-Shiny.png";
+	}
 }
 
 function stylizeTypes() {
