@@ -95,12 +95,12 @@ function showError() {
 		"Have you ever thought of a world where everything is exactly the same... except you don't exist?"
 	)
 	var gonerMessage = gonerMessages[Math.floor(Math.random()*gonerMessages.length)];
-	gonerP = document.getElementByClassName("goner-p");
-	gonerP.innerText = gonerMessage;
+	gonerP = document.getElementsByClassName("goner-p");
+	gonerP[0].innerText = gonerMessage;
 	shiny = Math.floor(Math.random() * 10) + 1
 	if (shiny == 1) {
-		gonerI = document.getElementByClassName("article-img");
-		gonerI.src = "/Resources/Giratina-Origin-Shiny.png";
+		gonerI = document.getElementsByClassName("article-img");
+		gonerI[0].src = "/Resources/Giratina-Origin-Shiny.png";
 	}
 }
 
