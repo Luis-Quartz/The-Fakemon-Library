@@ -78,6 +78,24 @@ function insertGalleryElementsGoner() {
 	}
 }
 
+function showError() {
+	var gonerMessages = Array(
+		"No, you're not the one...",
+		"I am Error.",
+		"The pain itself is reason why.",
+		"I think you are lost. It’s got to be around here somewhere...",
+		"It's a secret to everybody.",
+		"I always thought I might be bad, now I'm sure that it's true.",
+		"I think it's coming for me.",
+		"When I think about it, you, too, are all alone in the world.",
+		"L is real 2401.",
+		"Can anyone hear me? Help..."
+	)
+	var gonerMessage = items[Math.floor(Math.random()*gonerMessages.length)];
+	gonerP = document.getElementByClassName("goner-p");
+	gonerP[i].innerText = item;
+}
+
 function stylizeTypes() {
 	var typeP, i;
 	typeP = document.getElementsByClassName("type");
