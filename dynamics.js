@@ -90,6 +90,8 @@ function showError() {
 		"When I think about it, you, too, are all alone in the world.",
 		"L is real 2401.",
 		"Can anyone hear me? Help...",
+		"Hello there. How are you doing on this fine day?",
+		"Well, there was not a man here.",
 		"Have you ever thought of a world where everything is exactly the same... except you don't exist?"
 	)
 	var gonerMessage = items[Math.floor(Math.random()*gonerMessages.length)];
