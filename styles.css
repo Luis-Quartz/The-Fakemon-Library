@@ -269,6 +269,13 @@ h1 {
 	font-size: 20pt;
 }
 
+h1.lost-zone {
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	font-size: 20pt;
+	text-align: center;
+}
+
 h2 {
 	font-size: 18pt;
 	text-align: center;
@@ -288,6 +295,12 @@ h3 {
 }
 
 p {
+	padding: 0px 2px 0px 2px;
+	margin: 0px 0px 15px 0px;
+}
+
+p.lost-zone {
+	color: white;
 	padding: 0px 2px 0px 2px;
 	margin: 0px 0px 15px 0px;
 }
