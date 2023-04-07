@@ -36,22 +36,6 @@ function toggleBar(id) {
 	}
 }
 
-function insertDexElements() {
-	var dexLinks, dexIcons, i;
-	dexIcons = document.getElementsByClassName("dex-icon");
-	dexLinks = document.getElementsByClassName("dex-link");
-	for (i = 0; i < (dexLinks.length); i++) {
-		if (dexLinks[i].innerText == "------------") {
-			dexIcons[i].src = "/Resources/Unknown-Icon.png";
-			dexLinks[i].href = "#";
-		}
-		else {
-			dexIcons[i].src = "Icons/" + dexLinks[i].innerText + ".png";
-			dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
-		}
-	}
-}
-
 function insertGalleryElements() {
 	var dexLinks, dexSprites, i;
 	dexLinks = document.getElementsByClassName("dex-link");
@@ -61,20 +45,6 @@ function insertGalleryElements() {
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 		sprLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
-	}
-}
-
-function insertGalleryElementsGoner() {
-	var dexLinks, dexSprites, i;
-	dexSprites = document.getElementsByClassName("dex-sprite");
-	dexLinks = document.getElementsByClassName("dex-link");
-	
-	for (i = 0; i < (dexLinks.length); i++) {
-		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
-		dexSprites[i].id = dexLinks[i].innerText;
-		flipFun = "flipSprite('" + dexLinks[i].innerText + "', 'Sprites/" + dexLinks[i].innerText + ".png', 'Sprites/" + dexLinks[i].innerText + "-back.png')";
-		dexSprites[i].setAttribute('onclick', flipFun);
-		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 	}
 }
 
