@@ -675,6 +675,69 @@ th.dexh {
 td.dexh {
 	width: 65%;
 }
+
+table.dex-stats {
+	max-width: 100%;
+	width: 396px;
+}
+.col6th {
+	width: 16.66%;
+}
+.hp {
+	background-color: #ffb4ed;
+}
+.attack {
+	background-color: #ff9696;
+}
+.defense {
+	background-color: #fffdb4;
+}
+.spatk {
+	background-color: #b4b5ff;
+}
+.spdef {
+	background-color: #b4ffc4;
+}
+.speed {
+	background-color: #b4fffb;
+}
+
+td.hp {
+	background-color: #ffe3f8;
+}
+td.attack {
+	background-color: #ffd7d7;
+}
+td.defense {
+	background-color: #fffee3;
+}
+td.spatk {
+	background-color: #e0e1ff;
+}
+td.spdef {
+	background-color: #e7ffec;
+}
+td.speed {
+	background-color: #e7fffe;
+}
+
+td.total {
+	background-image: url("/Resources/StatTotalBackground.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+p.stat { /*Used for IV yield, not Base Stats*/
+	text-align: center;
+	border-radius: 7px;
+	margin: 2px;
+	padding: 1px;
+}
+
+.col25 { /*Used in the Held Item tables*/
+	width: 25%;
+}
+
 .male {
 	color: #1A11D5;
 }
@@ -725,66 +788,6 @@ p.gray {
 p.white {
 	color: black;
 	background-color: #eeeeee;
-}
-
-/*p.stat {
-	text-align: center;
-	border-radius: 7px;
-	margin: 2px;
-	padding: 1px;
-}*/
-table.dex-stats {
-	max-width: 100%;
-	width: 396px;
-}
-.col25 {
-	width: 25%;
-}
-.col6th {
-	width: 16.66%;
-}
-.hp {
-	background-color: #ffb4ed;
-}
-.attack {
-	background-color: #ff9696;
-}
-.defense {
-	background-color: #fffdb4;
-}
-.spatk {
-	background-color: #b4b5ff;
-}
-.spdef {
-	background-color: #b4ffc4;
-}
-.speed {
-	background-color: #b4fffb;
-}
-
-td.hp {
-	background-color: #ffe3f8;
-}
-td.attack {
-	background-color: #ffd7d7;
-}
-td.defense {
-	background-color: #fffee3;
-}
-td.spatk {
-	background-color: #e0e1ff;
-}
-td.spdef {
-	background-color: #e7ffec;
-}
-td.speed {
-	background-color: #e7fffe;
-}
-
-td.total {
-	background-image: url("/Resources/StatTotalBackground.png");
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 td.dex-page {
