@@ -685,40 +685,52 @@ table.dex-stats {
 }
 .hp {
 	background-color: #ffb4ed;
+	text-align: left;
 }
 .attack {
 	background-color: #ff9696;
+	text-align: left;
 }
 .defense {
 	background-color: #fffdb4;
+	text-align: left;
 }
 .spatk {
 	background-color: #b4b5ff;
+	text-align: left;
 }
 .spdef {
 	background-color: #b4ffc4;
+	text-align: left;
 }
 .speed {
 	background-color: #b4fffb;
+	text-align: left;
 }
 
 td.hp {
 	background-color: #ffe3f8;
+	text-align: right;
 }
 td.attack {
 	background-color: #ffd7d7;
+	text-align: right;
 }
 td.defense {
 	background-color: #fffee3;
+	text-align: right;
 }
 td.spatk {
 	background-color: #e0e1ff;
+	text-align: right;
 }
 td.spdef {
 	background-color: #e7ffec;
+	text-align: right;
 }
 td.speed {
 	background-color: #e7fffe;
+	text-align: right;
 }
 
 td.total {
@@ -727,7 +739,7 @@ td.total {
 	background-repeat: no-repeat;
 }
 
-p.stat { /*Used for IV yield, not Base Stats*/
+p.stat { /*Used for EV yield, not Base Stats*/
 	text-align: center;
 	border-radius: 7px;
 	margin: 2px;
