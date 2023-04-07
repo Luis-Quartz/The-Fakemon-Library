@@ -727,15 +727,21 @@ p.white {
 	background-color: #eeeeee;
 }
 
-p.stat {
+/*p.stat {
 	text-align: center;
 	border-radius: 7px;
 	margin: 2px;
 	padding: 1px;
+}*/
+table.dex-stats {
+	max-width: 100%;
+	width: 396px;
 }
-
 .col25 {
 	width: 25%;
+}
+.col6th {
+	width: 16.66;
 }
 .hp {
 	background-color: #ffb4ed;
