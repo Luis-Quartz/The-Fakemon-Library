@@ -60,10 +60,15 @@ function showError() {
 		"Hello there. How are you doing on this fine day?",
 		"Can anyone hear me? Help...",
 		"The pain itself is reason why.",
+		"An umbrella? But it's not raining.",
+		"It's raining somewhere else.",
+		"Well, there is a man here.",
+		"Well, there was not a man here.",
 		"Not too important, not too unimportant.",
 		"It pulls the strings and makes them ring.",
 		"L is real 2401.",
-		"If you're not careful and you noclip out of reality in the wrong areas, you'll end up in the Backrooms"
+		"This message should not appear. I'll be scared if it does...",
+		"If you're not careful and you noclip out of reality in the wrong areas, you'll end up in the Backrooms."
 	)
 	var gonerMessage = gonerMessages[Math.floor(Math.random()*gonerMessages.length)];
 	gonerP = document.getElementsByClassName("goner-p");
