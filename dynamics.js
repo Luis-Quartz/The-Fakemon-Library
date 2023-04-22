@@ -63,7 +63,6 @@ function showError() {
 		"Not too important, not too unimportant.",
 		"It pulls the strings and makes them ring.",
 		"L is real 2401.",
-		"Who are you in this vast multiverse?",
 		"If you're not careful and you noclip out of reality in the wrong areas, you'll end up in the Backrooms"
 	)
 	var gonerMessage = gonerMessages[Math.floor(Math.random()*gonerMessages.length)];
