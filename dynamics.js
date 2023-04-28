@@ -56,25 +56,29 @@ function showError() {
 		"I think you are lost. It’s got to be around here somewhere...",
 		"It's a secret to everybody.",
 		"I always thought I might be bad, now I'm sure that it's true.",
-		"Have you ever thought of a world where everything is exactly the same... except you don't exist?",
 		"Hello there. How are you doing on this fine day?",
-		"Can anyone hear me? Help...",
-		"The pain itself is reason why.",
-		"An umbrella? But it's not raining.",
+		"Have you ever thought of a world where everything is exactly the same... except you don't exist?",
+		"An umbrella? But it's not raining...",
 		"It's raining somewhere else.",
-		"Well, there is a man here.",
-		"Well, there was not a man here.",
-		"Not too important, not too unimportant.",
+		"...but nobody came.",
+		"A marvellous fun is about to break free.",
+		"CHAOS, CHAOS!",
+		"Can anyone hear me? Help...",
+		"Wake up and taste the pain.",
+		"It feels like a whirlwind.",
 		"It pulls the strings and makes them ring.",
+		"Fine. You want to see what happens so bad?",
+		"The pain itself is reason why.",
 		"L is real 2401.",
 		"This message should not appear. I'll be scared if it does...",
-		"If you're not careful and you noclip out of reality in the wrong areas, you'll end up in the Backrooms."
+		"If you're not careful and you noclip out of reality in the wrong areas, you'll end up in the Backrooms.",
+		"Who are you in this vast multiverse?",
 	)
 	var gonerMessage = gonerMessages[Math.floor(Math.random()*gonerMessages.length)];
 	gonerP = document.getElementsByClassName("goner-p");
 	gonerP[0].innerText = gonerMessage;
-	shiny = Math.floor(Math.random() * 10) + 1
-	if (shiny == 1) {
+	shiny = Math.floor(Math.random() * 100) + 1
+	if (shiny == 66) {
 		gonerI = document.getElementsByClassName("article-img");
 		gonerI[0].src = "/Resources/Giratina-Origin-Shiny.png";
 	}
