@@ -55,6 +55,7 @@ function showError() {
 		"I am Error.",
 		"I think you are lost. It’s got to be around here somewhere...",
 		"It's a secret to everybody.",
+		"Bold, precise, experimental.",
 		"I always thought I might be bad, now I'm sure that it's true.",
 		"Can anyone hear me? Help...",
 		"The pain itself is reason why.",
