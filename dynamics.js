@@ -52,25 +52,36 @@ function showError() {
 	var gonerMessages = Array(
 		"No, you're not the one...",
 		"When I think about it, you, too, are all alone in the world.",
-		"I am Error.",
-		"I think you are lost. It’s got to be around here somewhere...",
 		"It's a secret to everybody.",
+		"I am Error.",
+		"You've met with a terrible fate, haven't you?",
+		"I think you are lost. It’s got to be around here somewhere...",
 		"Bold, precise, experimental.",
 		"I always thought I might be bad, now I'm sure that it's true.",
+		"Have you ever thought of a world where everything is exactly the same... except you don't exist?",
+		"Dark, darker, yet darker.",
 		"Can anyone hear me? Help...",
 		"The pain itself is reason why.",
-		"Have you ever thought of a world where everything is exactly the same... except you don't exist?",
+		"The air crackles with freedom.",
 		"It feels like a whirlwind.",
 		"It pulls the strings and makes them ring.",
 		"L is real 2401.",
+		"We need to talk about parallel universes.",
+		"Shhh! Please walk quietly in the hallway!",
 		"This message should not appear. I'll be scared if it does...",
-		"If you're not careful and you noclip out of reality in the wrong areas, you'll end up in the Backrooms."
+		"If you're not careful and you noclip out of reality in the wrong areas, you'll end up in the Backrooms.",
+		"It's a simple spell but quite unbreakable."
 	)
 	var gonerMessage = gonerMessages[Math.floor(Math.random()*gonerMessages.length)];
-	gonerP = document.getElementsByClassName("goner-p");
-	gonerP[0].innerText = gonerMessage;
-	shiny = Math.floor(Math.random() * 100) + 1
-	if (shiny == 66) {
+	var gonerMessage2 = gonerMessages[Math.floor(Math.random()*gonerMessages.length)];
+	while (gonerMessage == gonerMessage2) {
+		var gonerMessage2 = gonerMessages[Math.floor(Math.random()*gonerMessages.length)];
+	}
+	gonerPs = document.getElementsByClassName("goner-p");
+	gonerPs[0].innerText = gonerMessage;
+	gonerPs[1].innerText = gonerMessage2;
+	pid = Math.floor(Math.random() * 100) + 1
+	if (pid == 66) {
 		gonerI = document.getElementsByClassName("article-img");
 		gonerI[0].src = "/Resources/Giratina-Origin-Shiny.png";
 	}
