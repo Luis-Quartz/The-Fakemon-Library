@@ -73,13 +73,8 @@ function showError() {
 		"It's a simple spell but quite unbreakable."
 	)
 	var gonerMessage = gonerMessages[Math.floor(Math.random()*gonerMessages.length)];
-	var gonerMessage2 = gonerMessages[Math.floor(Math.random()*gonerMessages.length)];
-	while (gonerMessage == gonerMessage2) {
-		var gonerMessage2 = gonerMessages[Math.floor(Math.random()*gonerMessages.length)];
-	}
-	gonerPs = document.getElementsByClassName("goner-p");
-	gonerPs[0].innerText = gonerMessage;
-	gonerPs[1].innerText = gonerMessage2;
+	gonerP = document.getElementsByClassName("goner-p");
+	gonerP[0].innerText = gonerMessage;
 	pid = Math.floor(Math.random() * 100) + 1
 	if (pid == 66) {
 		gonerI = document.getElementsByClassName("article-img");
