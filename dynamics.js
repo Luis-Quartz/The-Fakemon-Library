@@ -66,6 +66,7 @@ function showError() {
 		"But nobody came.",
 		"It could not be.",
 		"The pain itself is reason why.",
+		"The room between... There is a room between.",
 		"Fine. You want to see what happens so bad?",
 		"The air crackles with freedom.",
 		"It feels like a whirlwind.",
