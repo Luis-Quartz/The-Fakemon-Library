@@ -51,6 +51,8 @@ function insertGalleryElements() {
 function showError() {
 	var gonerMessages = Array(
 		"No, you're not the one...",
+		"Where... where am I?",
+		"You've got one Faller right here.",
 		"When I think about it, you, too, are all alone in the world.",
 		"It's a secret to everybody.",
 		"I am Error.",
@@ -60,18 +62,21 @@ function showError() {
 		"I always thought I might be bad, now I'm sure that it's true.",
 		"Have you ever thought of a world where everything is exactly the same... except you don't exist?",
 		"Can anyone hear me? Help...",
-		"The pain itself is reason why.",
+		"Photon readings negative.",
 		"But nobody came.",
+		"It could not be.",
+		"The pain itself is reason why.",
 		"Fine. You want to see what happens so bad?",
 		"The air crackles with freedom.",
 		"It feels like a whirlwind.",
 		"It pulls the strings and makes them ring.",
 		"L is real 2401.",
 		"We need to talk about parallel universes.",
+		"Don't become his lunch.",
 		"Shhh! Please walk quietly in the hallway!",
 		"This message should not appear. I'll be scared if it does...",
 		"If you're not careful and you noclip out of reality in the wrong areas, you'll end up in the Backrooms.",
-		"It's a simple spell but quite unbreakable."
+		"Who are you in this vast multiverse?"
 	)
 	var gonerMessage = gonerMessages[Math.floor(Math.random()*gonerMessages.length)];
 	gonerP = document.getElementsByClassName("goner-p");
