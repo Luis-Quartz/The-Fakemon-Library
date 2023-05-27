@@ -662,6 +662,7 @@ h2.dex-section {
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
 	border-radius: 10px;
+	background-color: #c09fea;
 }
 
 h3.dex-section {
@@ -670,6 +671,7 @@ h3.dex-section {
 	margin: 0px 0px 15px 0px;
 	padding: 2px 7px;
 	border-radius: 10px;
+	background-color: #e1ccfc;
 }
 
 div.table-array {
