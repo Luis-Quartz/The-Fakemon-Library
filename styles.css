@@ -656,6 +656,22 @@ th.species {
 	font-size: 15pt;
 }
 
+h2.dex-section {
+	font-size: 18pt;
+	text-align: center;
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	border-radius: 10px;
+}
+
+h3.dex-section {
+	font-size: 16pt;
+	text-align: center;
+	margin: 0px 0px 15px 0px;
+	padding: 2px 7px;
+	border-radius: 10px;
+}
+
 div.table-array {
 	max-width: 100%;
 }
