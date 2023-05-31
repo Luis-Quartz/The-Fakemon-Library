@@ -76,7 +76,7 @@ function flipSprite(spr, front, back) {
 	}
 }
 
-function sortTable(n, target) {
+function sortTable(dataToSort, target) {
 	var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
 	table = document.getElementById(target);
 	switching = true;
@@ -92,8 +92,8 @@ function sortTable(n, target) {
 			// Start by saying there should be no switching:
 			shouldSwitch = false;
 			/* Get the two elements you want to compare, one from current row and one from the next: */
-			x = rows[i].getElementsByTagName("td")[n];
-			y = rows[i + 1].getElementsByTagName("td")[n];
+			x = rows[i].getElementsByTagName("td")[dataToSort];
+			y = rows[i + 1].getElementsByTagName("td")[dataToSort];
 			/* Check if the two rows should switch place, based on the direction, asc or desc: */
 			if (dir == "asc") {
 				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
@@ -155,12 +155,19 @@ function showError() {
 		"You've met with a terrible fate, haven't you?",
 		"I think you are lost. It’s got to be around here somewhere...",
 		"Have you ever thought of a world where everything is exactly the same... except you don't exist?",
+		"Yes, your friend... The one behind you, with the creepy smile.",
 		"Can anyone hear me? Help...",
-		"It's dark... It's so dark here.",
-		"The air crackles with freedom.",
 		"You lost it when you tried to see too far... You lost it...",
+		"Photon readings negative.",
+		"It's dark... It's so dark here...",
+		"The air crackles with freedom.",
+		"It feels like a whirlwind.",
+		"It pulls the strings and makes them ring.",
 		"It could not be.",
 		"The pain itself is reason why.",
+		"Who are you running from?",
+		"Warning: Nonstandard Spacetime",
+		"Warning: Inconsistent Topology",
 		"If you're not careful and you noclip out of reality in the wrong areas, you'll end up in the Backrooms."
 	)
 	var gonerMessage = gonerMessages[Math.floor(Math.random()*gonerMessages.length)];
