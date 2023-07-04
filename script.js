@@ -90,11 +90,11 @@ function distortReality() {
 		"The pain itself is reason why."
 	)
 	var fun = Math.floor(Math.random()*fallerMessages.length);
-	goner-P = document.getElementsByClassName("goner-p");
-	goner-P[0].innerText = fallerMessages[fun];
+	gonerP = document.getElementsByClassName("goner-p");
+	gonerP[0].innerText = fallerMessages[fun];
 	pid = Math.floor(Math.random() * 66) + 1
 	if (pid == 66) {
-		img-G = document.getElementsByClassName("img-g");
-		img-G[0].src = "/Main/Pokédex/Gen4/Giratina-Origin-Shiny.png";
+		imgG = document.getElementsByClassName("img-g");
+		imgG[0].src = "/Main/Pokédex/Gen4/Giratina-Origin-Shiny.png";
 	}
 }
