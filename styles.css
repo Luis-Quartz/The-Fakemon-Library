@@ -371,6 +371,15 @@ a:hover {
 	max-width: 45%;
 }
 
+.img-g {
+	margin: auto;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	display: block;
+	text-align: center;
+	max-width: 100%;
+}
+
 /*Dex List Styles=======================================================================*/
 
 p.data {
