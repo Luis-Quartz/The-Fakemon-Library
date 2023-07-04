@@ -80,7 +80,6 @@ function distortReality() {
 		"No, you're not the one...",
 		"I'm going to go for help. Wait in the usual place.",
 		"Where... Where am I?",
-		"When I think about it, you, too, are all alone in the world.",
 		"Bold, precise, experimental.",
 		"Don't become his lunch.",
 		"I think you are lost. It’s got to be around here somewhere...",
