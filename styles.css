@@ -305,7 +305,7 @@ p.lost-zone {
 	margin: 0px 0px 15px 0px;
 }
 
-p.goner-p {
+p.void {
 	color: #ffffff;
 	text-align: center;
 	padding: 0px 2px 0px 2px;
@@ -371,7 +371,7 @@ a:hover {
 	max-width: 45%;
 }
 
-.img-g {
+.G {
 	margin: auto;
 	margin-top: 0px;
 	margin-bottom: 20px;
