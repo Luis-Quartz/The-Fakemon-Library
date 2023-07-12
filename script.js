@@ -85,16 +85,17 @@ function distortReality() {
 		"I think you are lost. It’s got to be around here somewhere...",
 		"Please don't think about this anymore.",
 		"Can anyone hear me? Help...",
+		"It pulls the strings and makes them ring.",
 		"It's dark... It's so dark here...",
 		"It could not be.",
 		"The pain itself is reason why."
 	)
 	var fun = Math.floor(Math.random()*fallerMessages.length);
-	gonerP = document.getElementsByClassName("goner-p");
-	gonerP[0].innerText = fallerMessages[fun];
+	gonerEchoes = document.getElementsByClassName("void");
+	gonerEchoes[0].innerText = fallerMessages[fun];
 	pid = Math.floor(Math.random() * 66) + 1
 	if (pid == 66) {
-		imgG = document.getElementsByClassName("img-g");
-		imgG[0].src = "/Main/Pokédex/Gen4/Giratina-Origin-Shiny.png";
+		G = document.getElementsByClassName("G");
+		G[0].src = "/Main/Pokédex/Gen4/Giratina-Origin-Shiny.png";
 	}
 }
