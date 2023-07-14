@@ -82,17 +82,20 @@ function distortReality() {
 		"Where... Where am I?",
 		"Bold, precise, experimental.",
 		"Don't become his lunch.",
+		"Shhh! Please walk quietly in the hallway!",
 		"I think you are lost. It’s got to be around here somewhere...",
 		"Please don't think about this anymore.",
 		"Can anyone hear me? Help...",
 		"It pulls the strings and makes them ring.",
 		"It's dark... It's so dark here...",
 		"It could not be.",
-		"The pain itself is reason why."
+		"The pain itself is reason why.",
+		"Warning: Nonstandard Spacetime"
 	)
 	var fun = Math.floor(Math.random()*fallerMessages.length);
-	gonerEchoes = document.getElementsByClassName("void");
-	gonerEchoes[0].innerText = fallerMessages[fun];
+	gonerEcho = fallerMessages[fun];
+	spacetime = document.getElementsByClassName("void");
+	spacetime[0].innerText = gonerEcho;
 	pid = Math.floor(Math.random() * 66) + 1
 	if (pid == 66) {
 		G = document.getElementsByClassName("G");
