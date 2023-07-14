@@ -94,8 +94,8 @@ function distortReality() {
 	)
 	var fun = Math.floor(Math.random()*fallerMessages.length);
 	gonerEcho = fallerMessages[fun];
-	spacetime = document.getElementsByClassName("void");
-	spacetime[0].innerText = gonerEcho;
+	abyss = document.getElementsByClassName("abyss");
+	abyss[0].innerText = gonerEcho;
 	pid = Math.floor(Math.random() * 66) + 1
 	if (pid == 66) {
 		G = document.getElementsByClassName("G");
