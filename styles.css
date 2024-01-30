@@ -191,6 +191,11 @@ article {
 	margin-top: 20px;
 	margin-bottom: 5px;
 }
+.sidetitle {
+	max-width: 160px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
 .bartext {
 	padding: 0px;
 	margin-bottom: 5px;
