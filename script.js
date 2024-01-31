@@ -118,7 +118,7 @@ function distortReality() {
 		"God save you if you hear something wandering around nearby, because it sure as hell has heard you.",
 		"This is the dimension of imagination."
 	)
-	var fun = Math.floor(Math.random()*fallerMessages.length);
+	var fun = Math.floor(Math.random()*thoughts.length);
 	echo = thoughts[fun];
 	abyss = document.getElementsByClassName("abyss");
 	abyss[0].innerText = echo;
