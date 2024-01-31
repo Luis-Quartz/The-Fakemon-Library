@@ -21,42 +21,6 @@ function includeHTML() {
 	}
 }
 
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
-function applyBinding() {
-	bound = getCookie("bound"));
-	if (bound == "true") {
-		var targetElement, i;
-		targetElement = document.getElementById("page-unbound");
-		targetElement.setAttribute("name", "page");
-		document.cookie = "bound=false";
-	} else {
-		var targetElement, i;
-		targetElement = document.getElementById("page");
-		targetElement.setAttribute("name", "page-unbound");
-		document.cookie = "bound=true";
-	}
-	
-}
-
-function applySettings() {
-	applyBinding();
-}
-
 function insertGalleryElements() {
 	var dexLinks, dexSprites, i;
 	dexLinks = document.getElementsByClassName("dex-link");
