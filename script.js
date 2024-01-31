@@ -38,7 +38,8 @@ function getCookie(cname) {
 }
 
 function applyBinding() {
-	if (getCookie("bound") == "true") {
+	bound = getCookie("bound"));
+	if (bound == "true") {
 		var targetElement, i;
 		targetElement = document.getElementById("page-unbound");
 		targetElement.setAttribute("name", "page");
