@@ -17,8 +17,9 @@ body {
 }
 
 #page {
-	display: inline-block;
+	display: flex;
 	flex-flow: column;
+	margin: auto;
 	height: 100%;
 	max-width: 1280px;
 }
