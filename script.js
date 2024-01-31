@@ -21,14 +21,39 @@ function includeHTML() {
 	}
 }
 
-function toggleBar(id) {
-	var bar = document.getElementById(id);
-	if (bar.style.display === "none") {
-		bar.style.display = "block";
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function applyBinding() {
+	if (getCookie(bound) == "true") {
+		var targetElement, i;
+		targetElement = document.getElementById("page-unbound");
+		targetElement.setAttribute("name", "page");
+		document.cookie = "bound=false";
+	} else {
+		var targetElement, i;
+		targetElement = document.getElementById("page");
+		targetElement.setAttribute("name", "page-unbound");
+		document.cookie = "bound=true";
 	}
-	else {
-		bar.style.display = "none";
-	}
+	
+}
+
+function applySettings() {
+	applyBinding();
 }
 
 function insertGalleryElements() {
@@ -40,6 +65,16 @@ function insertGalleryElements() {
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 		sprLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
+	}
+}
+
+function toggleBar(id) {
+	var bar = document.getElementById(id);
+	if (bar.style.display === "none") {
+		bar.style.display = "block";
+	}
+	else {
+		bar.style.display = "none";
 	}
 }
 
@@ -72,30 +107,56 @@ function flipSprite(spr, front, back) {
 }
 
 function distortReality() {
-	var fallerMessages = Array(
+	var thoughts = Array(
 		"Hahaha, I guess not. That white hand on your shoulder... I'm just imagining it.",
+		"Our words shall remain here for the ages.",
 		"Stay... Won't you stay with me?",
+		"There is no one but you here...",
+		"Every rumor has a kernel of truth to it.",
+		"A flipped coin doesn't always land heads or tails. Sometimes it may never land at all...",
 		"By the way, who is that standing behind you?",
 		"Dad, Mom, Abra... Where are you...?",
 		"No, you're not the one...",
 		"I'm going to go for help. Wait in the usual place.",
 		"Where... Where am I?",
+		"When I think about it, you, too, are all alone in the world.",
 		"Bold, precise, experimental.",
+		"Hello, starlight, you certainly gave everyone a scare.",
+		"Counting the seconds, standing alone, as thousands of years go by...",
 		"Don't become his lunch.",
 		"Shhh! Please walk quietly in the hallway!",
+		"L is real 2401.",
+		"We need to talk about parallel universes.",
+		"This message should not appear. I'll be scared if it does...",
+		"XD3R-B8HH-9ZR2-FL16",
+		"It's a secret to everybody.",
+		"I am Error.",
+		"You've met with a terrible fate, haven't you?",
 		"I think you are lost. It’s got to be around here somewhere...",
+		"Have you ever thought of a world where everything is exactly the same... except you don't exist?",
 		"Please don't think about this anymore.",
-		"Can anyone hear me? Help...",
+		"Yes, your friend... The one behind you, with the creepy smile.",
+		"I just wasn't ready for the responsibility.",
+		"The air crackles with freedom.",
+		"It feels like a whirlwind.",
 		"It pulls the strings and makes them ring.",
+		"You lost it when you tried to see too far...",
+		"Can anyone hear me? Help...",
 		"It's dark... It's so dark here...",
 		"It could not be.",
 		"The pain itself is reason why.",
-		"Warning: Nonstandard Spacetime"
+		"It's funny because we're all living in a simulation and free will is a lie.",
+		"Who are you running from?",
+		"You know how I never like letting people see my unfinished work.",
+		"Welcome to the zone between zones.",
+		"Warning: Nonstandard Spacetime",
+		"God save you if you hear something wandering around nearby, because it sure as hell has heard you.",
+		"This is the dimension of imagination."
 	)
 	var fun = Math.floor(Math.random()*fallerMessages.length);
-	gonerEcho = fallerMessages[fun];
+	echo = thoughts[fun];
 	abyss = document.getElementsByClassName("abyss");
-	abyss[0].innerText = gonerEcho;
+	abyss[0].innerText = echo;
 	pid = Math.floor(Math.random() * 66) + 1
 	if (pid == 66) {
 		G = document.getElementsByClassName("G");
