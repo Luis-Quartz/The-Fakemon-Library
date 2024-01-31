@@ -24,6 +24,12 @@ body {
 	max-width: 1280px;
 }
 
+#page-unbound {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
 header {
 	display: flex;
 	flex: 0 1 82px; /*82 pixels tall*/
