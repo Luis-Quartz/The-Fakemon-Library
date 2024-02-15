@@ -763,6 +763,8 @@ table.dex-stats {
 }
 
 td.hp {
+	padding: 0px;
+	margin: 0px;
 	background-color: #ffe3f8;
 	text-align: right;
 }
@@ -818,8 +820,8 @@ p.color {
 	color: white;
 	text-align: center;
 	border-radius: 7px;
-	margin: 2px;
-	padding: 1px;
+	margin: 0px;
+	padding: 0px;
 }
 p.indeterminate {
 	background-color: #b197c2;
