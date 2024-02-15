@@ -608,7 +608,7 @@ div.gallery-container {
 	flex-wrap: wrap;
 	grid-gap: 20px;
 	justify-content: center;
-	width: 100%;
+	width: 151px;
 	margin-bottom: 20px;
 }
 img.marker {
@@ -716,7 +716,7 @@ div.table-array {
 
 table.dex-sprite{
 	max-width: 100%;
-	width: 368px;
+	width: 150px;
 }
 
 table.dex-data {
