@@ -594,12 +594,10 @@ th.pc-slot {
 	font-weight: normal;
 	width: 151px;
 	height: 22px;
-	padding-top: 3px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding: 2px;
 }
 td.pc-slot {
-	padding: 24px 24px 8px 24px;
+	padding: 5px 5px 2px 5px;
 	height: 100%;
 	max-height: 130px;
 	vertical-align: bottom;
@@ -633,7 +631,7 @@ th.sprh {
 	max-width: 320px;
 }
 td.sprf {
-	padding: 24px 24px 8px 24px;
+	padding: 5px 5px 2px 5px;
 	height: 100%;
 	vertical-align: bottom;
 }
