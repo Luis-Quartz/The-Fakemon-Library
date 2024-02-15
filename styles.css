@@ -586,6 +586,9 @@ div.pc-box {
 	width: 100%;
 	margin-bottom: 20px;
 }
+table.pc-slot {
+	padding: 0px;
+}
 th.pc-slot {
 	text-align: left;
 	font-weight: normal;
