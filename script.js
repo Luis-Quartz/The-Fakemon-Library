@@ -33,6 +33,16 @@ function insertGalleryElements() {
 	}
 }
 
+function fillPCBoxes() {
+	var dexLinks, dexSprites, i;
+	dexLinks = document.getElementsByClassName("dex-link");
+	dexSprites = document.getElementsByClassName("dex-sprite");
+	for (i = 0; i < (dexLinks.length); i++) {
+		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
+		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
+	}
+}
+
 function toggleBar(id) {
 	var bar = document.getElementById(id);
 	if (bar.style.display === "none") {
