@@ -581,9 +581,8 @@ table.dex-list {
 div.pc-box {
 	display: flex;
 	flex-wrap: wrap;
-	grid-gap: 20px;
+	grid-gap: 12px;
 	justify-content: center;
-	width: 100%;
 	max-width: 1042;
 	margin-bottom: 20px;
 }
