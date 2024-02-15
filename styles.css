@@ -394,8 +394,8 @@ p.data {
 p.type {
 	text-align: center;
 	border-radius: 7px;
-	margin: 2px;
-	padding: 1px;
+	margin: 0px;
+	padding: 0px;
 }
 p.Fire {
 	color: white;
