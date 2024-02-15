@@ -577,7 +577,26 @@ table.dex-list {
 	width: 30%;
 }
 
-/*Pokédex Gallery Styles========================================================================================*/
+/*Box Planner Styles========================================================================================*/
+div.pc-box {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 20px;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 20px;
+}
+th.pc-slot {
+	text-align: left;
+	min-width: 151px;
+	height: 22px;
+	padding-top: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	max-width: 320px;
+}
+
+
 div.gallery-container {
 	display: flex;
 	flex-wrap: wrap;
