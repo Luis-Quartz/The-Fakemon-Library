@@ -10,6 +10,7 @@ html {
 
 body {
 	height: 100%;
+	max-width: 1482px;
 	font-family: sans-serif;
 	padding: 0;
 	margin: 0;
