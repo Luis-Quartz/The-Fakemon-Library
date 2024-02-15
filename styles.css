@@ -342,6 +342,7 @@ table {
 	border: 1px solid #0a0a0a;
 	border-radius: 5px;
 	background-color: #8888a2;
+	padding: 0px;
 }
 
 a {
@@ -593,12 +594,11 @@ th.pc-slot {
 	font-weight: normal;
 	width: 151px;
 	height: 22px;
-	padding: 2px;
+	padding: 0px 2px;
 }
 td.pc-slot {
-	padding: 5px 5px 2px 5px;
-	height: 100%;
-	max-height: 130px;
+	padding: 3px 3px 1px 3px;
+	height: 127px;
 	vertical-align: bottom;
 }
 
@@ -629,11 +629,11 @@ th.sprh {
 }
 td.sprf {
 	padding: 3px;
-	height: 130px;
+	height: 127px;
 	vertical-align: bottom;
 }
 td.typecell {
-	height: 26px;
+	height: 22px;
 }
 .cell50 {
 	width: 50%;
