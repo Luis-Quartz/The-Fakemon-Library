@@ -608,7 +608,7 @@ div.gallery-container {
 	flex-wrap: wrap;
 	grid-gap: 20px;
 	justify-content: center;
-	width: 151px;
+	width: 100%;
 	margin-bottom: 20px;
 }
 img.marker {
@@ -623,15 +623,13 @@ img.art {
 }
 th.sprh {
 	text-align: left;
-	min-width: 218px;
+	font-weight: normal;
 	height: 22px;
-	padding-top: 3px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding: 3px;
 	width: 151px;
 }
 td.sprf {
-	padding: 5px 5px 2px 5px;
+	padding: 3px;
 	height: 130px;
 	vertical-align: bottom;
 }
