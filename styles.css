@@ -588,14 +588,19 @@ div.pc-box {
 }
 th.pc-slot {
 	text-align: left;
-	min-width: 151px;
+	width: 151px;
 	height: 22px;
 	padding-top: 3px;
 	padding-left: 5px;
 	padding-right: 5px;
 	max-width: 320px;
 }
-
+td.pc-slot {
+	padding: 24px 24px 8px 24px;
+	height: 100%;
+	max-height: 130px;
+	vertical-align: bottom;
+}
 
 div.gallery-container {
 	display: flex;
