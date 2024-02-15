@@ -581,7 +581,7 @@ table.dex-list {
 div.pc-box {
 	justify-content: center;
 	width: 100%;
-	max-width: 1042;
+	max-width: 1042px;
 	margin-bottom: 20px;
 }
 th.pc-slot {
