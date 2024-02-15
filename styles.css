@@ -579,15 +579,10 @@ table.dex-list {
 
 /*Box Planner Styles========================================================================================*/
 div.pc-box {
-	display: flex;
-	flex-wrap: wrap;
-	grid-gap: 12px;
 	justify-content: center;
+	width: 100%;
 	max-width: 1042;
 	margin-bottom: 20px;
-}
-table.pc-slot {
-	padding: 0px;
 }
 th.pc-slot {
 	text-align: left;
@@ -599,7 +594,7 @@ th.pc-slot {
 td.pc-slot {
 	padding: 3px 3px 1px 3px;
 	height: 127px;
-	vertical-align: bottom;
+	vertical-align: center;
 }
 
 div.gallery-container {
