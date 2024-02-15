@@ -585,7 +585,7 @@ table.dex-list {
 div.pc-box {
 	display: flex;
 	flex-wrap: wrap;
-	grid-gap: 20px;
+	grid-gap: 12px;
 	justify-content: center;
 	width: 100%;
 	max-width: 1042px;
@@ -608,7 +608,7 @@ td.pc-slot {
 div.gallery-container {
 	display: flex;
 	flex-wrap: wrap;
-	grid-gap: 20px;
+	grid-gap: 12px;
 	justify-content: center;
 	width: 100%;
 	margin-bottom: 20px;
@@ -626,7 +626,6 @@ img.art {
 th.sprh {
 	text-align: left;
 	font-weight: normal;
-	height: 22px;
 	padding: 0px 2px;
 	width: 151px;
 }
@@ -636,7 +635,6 @@ td.sprf {
 	vertical-align: bottom;
 }
 td.typecell {
-	height: 22px;
 }
 .cell50 {
 	width: 50%;
