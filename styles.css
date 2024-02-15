@@ -547,6 +547,7 @@ table tr:first-child:last-child td:first-child:last-child { /*If the cell is the
 
 th{
 	background-color: #dedef0;
+	font-weight: normal;
 }
 td {
 	background-color: #fcfcff;
@@ -585,11 +586,12 @@ div.pc-box {
 	justify-content: center;
 	width: 100%;
 	max-width: 1042px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 20px;
 }
 th.pc-slot {
 	text-align: left;
-	font-weight: normal;
 	width: 151px;
 	height: 22px;
 	padding: 0px 2px;
