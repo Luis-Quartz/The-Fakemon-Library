@@ -769,22 +769,32 @@ td.hp {
 	text-align: right;
 }
 td.attack {
+	padding: 0px;
+	margin: 0px;
 	background-color: #ffd7d7;
 	text-align: right;
 }
 td.defense {
+	padding: 0px;
+	margin: 0px;
 	background-color: #fffee3;
 	text-align: right;
 }
 td.spatk {
+	padding: 0px;
+	margin: 0px;
 	background-color: #e0e1ff;
 	text-align: right;
 }
 td.spdef {
+	padding: 0px;
+	margin: 0px;
 	background-color: #e7ffec;
 	text-align: right;
 }
 td.speed {
+	padding: 0px;
+	margin: 0px;
 	background-color: #e7fffe;
 	text-align: right;
 }
