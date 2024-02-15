@@ -346,6 +346,7 @@ table {
 	border-radius: 5px;
 	background-color: #5b5672;
 	padding: 0px;
+	border-spacing: 0px;
 }
 
 a {
