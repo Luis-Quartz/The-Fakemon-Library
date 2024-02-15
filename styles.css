@@ -340,9 +340,9 @@ p.news-signature {
 
 table {
 	border: 1px solid #0a0a0a;
-	border-radius: 10px;
+	border-radius: 4px;
 	background-color: #8888a2;
-	padding: 2px;
+	padding: 1px;
 }
 
 a {
