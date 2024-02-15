@@ -343,10 +343,10 @@ p.news-signature {
 
 table {
 	border: 1px;
+	border-spacing: 1px;
 	border-radius: 5px;
 	background-color: #5b5672;
 	padding: 0px;
-	border-spacing: 0px;
 }
 
 a {
