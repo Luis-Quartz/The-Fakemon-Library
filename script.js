@@ -81,7 +81,7 @@ function getCookie(cname) {
 	return "";
 }
 
-function toggleCaught(id) {
+/*function toggleCaught(id) {
 	var element = document.getElementById(id);
 	element.classList.toggle("caught");
 	if (element.classList.contains("caught") {
@@ -99,7 +99,7 @@ function loadSave() {
 			slot[0].classList.toggle("caught");
 		}
 	}
-}
+}*/
 
 function flipSprite(spr, front, back) {
 	var sp = document.getElementById(spr);
