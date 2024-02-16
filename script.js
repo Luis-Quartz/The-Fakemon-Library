@@ -81,17 +81,17 @@ function getCookie(cname) {
 	return "";
 }
 
-/*function toggleCaught(id) {
+function toggleCaught(id) {
 	var element = document.getElementById(id);
 	element.classList.toggle("caught");
 	if (element.classList.contains("caught") {
-		setCookie(id.toString(), "caught", 400);
+		setCookie(id, "caught", 400);
 	} else {
-		setCookie(id.toString(), "caught", -1);
+		setCookie(id, "caught", -1);
 	}
 }
 
-function loadSave() {
+/*function loadSave() {
 	var slot, i;
 	slot = document.getElementsByClassName("tracker");
 	for (i = 0; i < (slot.length); i++) {
