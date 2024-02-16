@@ -764,7 +764,7 @@ table.dex-stats {
 
 td.hp {
 	padding: 0px;
-	margin: 0px;
+	margin: 0px, 5px, 0px, 0px;
 	background-color: #ffe3f8;
 	text-align: right;
 }
@@ -808,7 +808,7 @@ td.total {
 p.stat { /*Used for EV yield, not Base Stats*/
 	text-align: center;
 	border-radius: 7px;
-	margin: 0px 2px 0px 0px;
+	margin: 0px;
 	padding: 0px;
 }
 
