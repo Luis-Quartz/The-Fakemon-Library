@@ -105,7 +105,7 @@ function loadSave() {
 	for (i = 0; i < (slot.length); i++) {
 		if (getCookie(i.toString()) == "caught") {
 			element.classList.toggle("caught");
-			setCookie(i.toString(), "caught", 400);
+			//setCookie(i.toString(), "caught", 400);
 		}
 	}
 }
