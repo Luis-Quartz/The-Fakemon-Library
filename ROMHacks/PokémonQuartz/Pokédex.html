@@ -38,33 +38,51 @@
 					<h2 id="Gen1">Generation 1</h2>
 					
 					<div class="gallery-container">
-					
-						<table id="001" class="tracker caught">
+						
+						<table id="0" class="tracker caught" style="display: none;">
 							<tr>
 								<th class="sprh" colspan="2">
-									<a href="#" class="dex-link">Chapebaya</a>
+									<a href="#" class="dex-link">MissingNo.</a>
 								</th>
 							</tr>
 							<tr>
-								<td onclick="toggleCaught('001')" class="sprf" colspan="2">
+								<td onclick="toggleCaught('0')" class="sprf" colspan="2">
 									<img src="#" class="dex-sprite"><img>
 								</td>
 							</tr>
 							<tr>
-								<td onclick="toggleCaught('001')" class="typecell" colspan="2">
+								<td onclick="toggleCaught('0')" class="typecell" colspan="2">
+									<p class="type">Grass</p>
+								</td>
+							</tr>
+						</table>
+					
+						<table id="1" class="tracker">
+							<tr>
+								<th class="sprh" colspan="2">
+									001 <a href="#" class="dex-link">Chapebaya</a>
+								</th>
+							</tr>
+							<tr>
+								<td onclick="toggleCaught('1')" class="sprf" colspan="2">
+									<img src="#" class="dex-sprite"><img>
+								</td>
+							</tr>
+							<tr>
+								<td onclick="toggleCaught('1')" class="typecell" colspan="2">
 									<p class="type">Grass</p>
 								</td>
 							</tr>
 						</table>
 						
-						<table id="002" class="tracker caught">
+						<table id="2" class="tracker">
 							<tr>
-								<th class="sprh" onclick="toggleCaught(002)" colspan="2">
+								<th class="sprh" onclick="toggleCaught('2')" colspan="2">
 									002 <a href="#" class="dex-link">Denpecha</a>
 								</th>
 							</tr>
 							<tr>
-								<td class="sprf" onclick="toggleCaught(002)" colspan="2">
+								<td class="sprf" onclick="toggleCaught('2')" colspan="2">
 									<img src="#" class="dex-sprite"><img>
 								</td>
 							</tr>
@@ -7559,6 +7577,7 @@
 			includeHTML();
 			stylizeTypes();
 			insertGalleryElements();
+			loadSave();
 		</script>
 		
 	</body>
