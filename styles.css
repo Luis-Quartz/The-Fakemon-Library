@@ -739,7 +739,6 @@ table.dex-stats {
 .hp {
 	background-color: #ffb4ed;
 	text-align: left;
-	padding-left: 3px;
 }
 .attack {
 	background-color: #ff9696;
@@ -764,7 +763,7 @@ table.dex-stats {
 
 td.hp {
 	padding: 0px;
-	margin: 0px, 5px, 0px, 0px;
+	margin: 0px;
 	background-color: #ffe3f8;
 	text-align: right;
 }
