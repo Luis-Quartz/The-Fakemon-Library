@@ -23,12 +23,12 @@ function includeHTML() {
 
 function buildPokedex() {
 	var dexLinks, dexSprites, dexTrackers, i;
+	dexTrackers = document.getElementsByClassName("dex-tracker");
 	dexLinks = document.getElementsByClassName("dex-link");
 	dexSprites = document.getElementsByClassName("dex-sprite");
-	dexTrackers = document.getElementsByClassName("dex-tracker");
 	spriteRows = document.getElementsByClassName("sprite-row");
 	//typeRows = document.getElementsByClassName("type-cell");
-	for (i = 0; i < (dexLinks.length); i++) {
+	for (i = 0; i < (dexTrackers.length); i++) {
 		iString = i.toString();
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
