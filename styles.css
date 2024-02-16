@@ -648,12 +648,12 @@ th.sprh {
 	padding: 0px 2px;
 	width: 151px;
 }
-td.sprf {
+td.sprite-row {
 	padding: 3px;
 	height: 103px;
 	vertical-align: bottom;
 }
-td.typecell {
+td.type-row {
 }
 .cell50 {
 	width: 50%;

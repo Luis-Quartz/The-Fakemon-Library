@@ -21,13 +21,19 @@ function includeHTML() {
 	}
 }
 
-function insertGalleryElements() {
-	var dexLinks, dexSprites, i;
+function buildPokedex() {
+	var dexLinks, dexSprites, dexTrackers, i;
 	dexLinks = document.getElementsByClassName("dex-link");
 	dexSprites = document.getElementsByClassName("dex-sprite");
+	dexTrackers = document.getElementsByClassName("dex-tracker");
+	spriteRows = document.getElementsByClassName("sprite-row");
+	typeRows = document.getElementsByClassName("type-row");
 	for (i = 0; i < (dexLinks.length); i++) {
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
+		dexTrackers[i].id = i.toString();
+		spriteRows[i].setAttribute("onclick", "toggleCaught('" + i.toString() + "')";
+		typeRows[i].setAttribute("onclick", "toggleCaught('" + i.toString() + "')";
 	}
 }
 
@@ -96,7 +102,7 @@ function loadSave() {
 	slot = document.getElementsByClassName("tracker");
 	for (i = 0; i < (slot.length); i++) {
 		if (getCookie(i.toString()) == "caught") {
-			slot[i].classList.toggle("caught");
+			toggleCaught[i];
 		}
 	}
 }
