@@ -625,6 +625,12 @@ img.art {
 	max-height: 100%;
 }
 
+table.tracker {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 table.tracker td:hover {
 	cursor: pointer;
 }
