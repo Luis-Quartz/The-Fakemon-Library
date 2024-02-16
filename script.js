@@ -95,7 +95,7 @@ function loadSave() {
 	var slot, i;
 	slot = document.getElementsByClassName("tracker");
 	for (i = 0; i < (slot.length); i++) {
-		if (getCookie(i) == "caught") {
+		if (getCookie(i.toString()) == "caught") {
 			slot[0].classList.toggle("caught");
 		}
 	}
