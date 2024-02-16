@@ -61,6 +61,44 @@ function stylizeTypes() {
 function toggleCaught(id) {
 	var element = document.getElementById(id);
 	element.classList.toggle("caught");
+	if (element.classList.contains("caught") {
+		setCookie(id, "caught", 400);
+	} else {
+		setCookie(id, "caught", -1);
+	}
+}
+
+function setCookie(cname, cvalue, exdays) {
+	const d = new Date();
+	d.setTime(d.getTime() + (exdays*24*60*60*1000));
+	let expires = "expires="+ d.toUTCString();
+	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+	let name = cname + "=";
+	let decodedCookie = decodeURIComponent(document.cookie);
+	let ca = decodedCookie.split(';');
+	for(let i = 0; i <ca.length; i++) {
+		let c = ca[i];
+		while (c.charAt(0) == ' ') {
+			c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+		return c.substring(name.length, c.length);
+		}
+	}
+	return "";
+}
+
+function loadSave() {
+	var slot, i;
+	slot = document.getElementsByClassName("tracker");
+	for (i = 0; i < (slot.length); i++) {
+		if getCookie(i) == "caught" {
+			slot[0].classList.toggle("caught");
+		}
+	}
 }
 
 function flipSprite(spr, front, back) {
