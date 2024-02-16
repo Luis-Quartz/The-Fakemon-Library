@@ -59,13 +59,8 @@ function stylizeTypes() {
 }
 
 function toggleCaught(id) {
-	var slot = document.getElementById(id);
-	if (slot.className == "tracker") {
-		slot.className "tracker caught";
-	}
-	else {
-		slot.className = "tracker";
-	}
+	var element = document.getElementById(id);
+	element.classList.toggle("caught");
 }
 
 function flipSprite(spr, front, back) {
