@@ -32,7 +32,7 @@ function buildPokedex() {
 		iString = i.toString();
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
-		dexTrackers[i].id = iString;
+		//dexTrackers[i].id = iString;
 		spriteRows[i].setAttribute("onclick", "toggleCaught('" + iString + "')";
 		typeRows[i].setAttribute("onclick", "toggleCaught('" + iString + "')";
 	}
