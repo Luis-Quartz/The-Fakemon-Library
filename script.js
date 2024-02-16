@@ -84,14 +84,14 @@ function getCookie(cname) {
 function toggleCaught(id) {
 	var element = document.getElementById(id);
 	element.classList.toggle("caught");
-	if (element.classList.contains("caught") {
+	if (element.classList.contains("caught")) {
 		setCookie(id, "caught", 400);
 	} else {
 		setCookie(id, "caught", -1);
 	}
 }
 
-/*function loadSave() {
+function loadSave() {
 	var slot, i;
 	slot = document.getElementsByClassName("tracker");
 	for (i = 0; i < (slot.length); i++) {
@@ -99,7 +99,7 @@ function toggleCaught(id) {
 			slot[0].classList.toggle("caught");
 		}
 	}
-}*/
+}
 
 function flipSprite(spr, front, back) {
 	var sp = document.getElementById(spr);
