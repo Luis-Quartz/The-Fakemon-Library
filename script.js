@@ -104,7 +104,7 @@ function loadSave() {
 	slot = document.getElementsByClassName("dex-tracker");
 	for (i = 0; i < (slot.length); i++) {
 		if (getCookie(i.toString()) == "caught") {
-			element.classList.toggle("caught");
+			slot.classList.toggle("caught");
 			//setCookie(i.toString(), "caught", 400);
 		}
 	}
