@@ -101,7 +101,7 @@ function toggleCaught(id) {
 
 function loadSave() {
 	var slot, i;
-	slot = document.getElementsByClassName("tracker");
+	slot = document.getElementsByClassName("dex-tracker");
 	for (i = 0; i < (slot.length); i++) {
 		if (getCookie(i.toString()) == "caught") {
 			toggleCaught[i.toString];
