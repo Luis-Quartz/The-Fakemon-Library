@@ -58,16 +58,6 @@ function stylizeTypes() {
 	}
 }
 
-function toggleCaught(id) {
-	var element = document.getElementById(id);
-	element.classList.toggle("caught");
-	if (element.classList.contains("caught") {
-		setCookie(id, "caught", 400);
-	} else {
-		setCookie(id, "caught", -1);
-	}
-}
-
 function setCookie(cname, cvalue, exdays) {
 	const d = new Date();
 	d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -89,6 +79,16 @@ function getCookie(cname) {
 		}
 	}
 	return "";
+}
+
+function toggleCaught(id) {
+	var element = document.getElementById(id);
+	element.classList.toggle("caught");
+	if (element.classList.contains("caught") {
+		setCookie(id.toString(), "caught", 400);
+	} else {
+		setCookie(id.toString(), "caught", -1);
+	}
 }
 
 function loadSave() {
