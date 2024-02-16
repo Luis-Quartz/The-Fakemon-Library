@@ -29,11 +29,12 @@ function buildPokedex() {
 	spriteRows = document.getElementsByClassName("sprite-row");
 	typeRows = document.getElementsByClassName("type-row");
 	for (i = 0; i < (dexLinks.length); i++) {
+		iString = i.toString();
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 		dexTrackers[i].id = i.toString();
-		spriteRows[i].setAttribute("onclick", "toggleCaught('" + i.toString() + "')";
-		typeRows[i].setAttribute("onclick", "toggleCaught('" + i.toString() + "')";
+		spriteRows[i].setAttribute("onclick", "toggleCaught('" + iString + "')";
+		typeRows[i].setAttribute("onclick", "toggleCaught('" + iString + "')";
 	}
 }
 
