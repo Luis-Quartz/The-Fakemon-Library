@@ -626,12 +626,13 @@ img.art {
 }
 
 table.dex-tracker {
+	cur
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
 }
-table.tracker td:hover {
+table.dex-tracker td:hover {
 	cursor: pointer;
 }
 
