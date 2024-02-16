@@ -25,11 +25,9 @@ function insertGalleryElements() {
 	var dexLinks, dexSprites, i;
 	dexLinks = document.getElementsByClassName("dex-link");
 	dexSprites = document.getElementsByClassName("dex-sprite");
-	sprLinks = document.getElementsByClassName("spr-link");
 	for (i = 0; i < (dexLinks.length); i++) {
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
-		sprLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 	}
 }
 
