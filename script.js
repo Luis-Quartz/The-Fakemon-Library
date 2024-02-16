@@ -60,11 +60,11 @@ function stylizeTypes() {
 
 function toggleCaught(id) {
 	var slot = document.getElementById(id);
-	if (slot.class === "tracker") {
-		element.setAttribute(class, "tracker caught");
+	if (slot.className == "tracker") {
+		slot.className "tracker caught";
 	}
 	else {
-		element.setAttribute(class, "tracker");
+		slot.className = "tracker";
 	}
 }
 
