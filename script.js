@@ -33,7 +33,8 @@ function buildPokedex() {
 		dexTrackers[i].id = iString;
 		functionString = "toggleCaught('" + iString + "')"
 		spriteRows[i].setAttribute("onclick", functionString);
-		if (dexSprites[i].src.length < 1) {
+		src = dexSprites[i].src;
+		if (src.length < 1) {
 			dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 		}
 	}
