@@ -27,17 +27,15 @@ function buildPokedex() {
 	dexLinks = document.getElementsByClassName("dex-link");
 	dexSprites = document.getElementsByClassName("dex-sprite");
 	spriteRows = document.getElementsByClassName("sprite-row");
-	//typeRows = document.getElementsByClassName("type-cell");
 	for (i = 0; i < (dexTrackers.length); i++) {
 		iString = i.toString();
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
-		if (dexSprites[i].src == "#") {
-			dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
-		}
 		dexTrackers[i].id = iString;
 		functionString = "toggleCaught('" + iString + "')"
 		spriteRows[i].setAttribute("onclick", functionString);
-		//typeRows[i].setAttribute("onclick", functionString);
+		if (dexSprites[i].src.length < 1) {
+			dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
+		}
 	}
 }
 
