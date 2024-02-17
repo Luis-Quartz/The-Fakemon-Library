@@ -37,6 +37,13 @@ function buildPokedex() {
 	}
 }
 
+function handleForms() {
+	formList = document.getElementsByClassName("sprite-row");
+	for (i = 0; i < (formList.length); i++) {
+		formList[i].innerHTML = formList[i].id;
+	}
+}
+
 function toggleBar(id) {
 	var bar = document.getElementById(id);
 	if (bar.style.display === "none") {
