@@ -38,7 +38,7 @@ function buildPokedex() {
 }
 
 function handleForms() {
-	formList = document.getElementsByClassName("sprite-row");
+	formList = document.getElementsByClassName("form");
 	for (i = 0; i < (formList.length); i++) {
 		formList[i].innerHTML = formList[i].id;
 	}
