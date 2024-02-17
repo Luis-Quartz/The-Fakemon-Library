@@ -25,8 +25,8 @@ function buildPokedex() {
 	var dexLinks, dexSprites, dexTrackers, i;
 	dexTrackers = document.getElementsByClassName("dex-tracker");
 	dexLinks = document.getElementsByClassName("dex-link");
+	spriteCells = document.getElementsByClassName("sprite-cell");
 	dexSprites = document.getElementsByClassName("dex-sprite");
-	spriteRows = document.getElementsByClassName("sprite-row");
 	typeRows = document.getElementsByClassName("type-row");
 	for (i = 0; i < (dexTrackers.length); i++) {
 		iString = i.toString();
