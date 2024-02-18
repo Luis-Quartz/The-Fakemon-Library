@@ -101,9 +101,9 @@ function toggleCaught(pid) {
 	var element = document.getElementById(pid);
 	element.classList.toggle("caught");
 	if (element.classList.contains("caught")) {
-		setCookie(currentUniverse + id, "caught", 400);
+		setCookie(pid, "caught", 400);
 	} else {
-		setCookie(currentUniverse + id, "caught", -1);
+		setCookie(pid, "caught", -1);
 	}
 }
 
