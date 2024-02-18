@@ -98,7 +98,7 @@ function getCookie(cname) {
 }
 
 function toggleCaught(currentUniverse, id) {
-	var element = document.getElementById(id);
+	var element = document.getElementById(currentUniverse + id);
 	element.classList.toggle("caught");
 	if (element.classList.contains("caught")) {
 		setCookie(currentUniverse + id, "caught", 400);
