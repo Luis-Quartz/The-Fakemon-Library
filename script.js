@@ -21,7 +21,7 @@ function includeHTML() {
 	}
 }
 
-function buildPokedex() {
+function buildPokedex(currentUniverse) {
 	var dexLinks, dexSprites, dexTrackers, i;
 	dexTrackers = document.getElementsByClassName("dex-tracker");
 	dexLinks = document.getElementsByClassName("dex-link");
@@ -32,7 +32,7 @@ function buildPokedex() {
 		iString = i.toString();
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 		dexTrackers[i].id = iString;
-		functionString = "toggleCaught('" + iString + "')"
+		functionString = "toggleCaught('" + currentUniverse + iString + "')"
 		spriteCells[i].setAttribute("onclick", functionString);
 		typeRows[i].setAttribute("onclick", functionString);
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
@@ -97,23 +97,23 @@ function getCookie(cname) {
 	return "";
 }
 
-function toggleCaught(id) {
+function toggleCaught(currentUniverse, id) {
 	var element = document.getElementById(id);
 	element.classList.toggle("caught");
 	if (element.classList.contains("caught")) {
-		setCookie(id, "caught", 400);
+		setCookie(currentUniverse + id, "caught", 400);
 	} else {
-		setCookie(id, "caught", -1);
+		setCookie(currentUniverse + id, "caught", -1);
 	}
 }
 
-function loadSave() {
+function loadSave(currentUniverse) {
 	var slot, i;
 	slot = document.getElementsByClassName("dex-tracker");
 	for (i = 0; i < (slot.length); i++) {
-		if (getCookie(i.toString()) == "caught") {
+		if (getCookie(currentUniverse + i.toString()) == "caught") {
 			slot[i].classList.toggle("caught");
-			setCookie(i.toString(), "caught", 400);
+			setCookie(currentUniverse + i.toString(), "caught", 400);
 		}
 	}
 }
