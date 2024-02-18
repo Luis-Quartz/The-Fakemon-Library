@@ -31,7 +31,7 @@ function buildPokedex(currentUniverse) {
 	for (i = 0; i < (dexTrackers.length); i++) {
 		iString = i.toString();
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
-		dexTrackers[i].id = iString;
+		dexTrackers[i].id = currentUniverse + iString;
 		functionString = "toggleCaught('" + currentUniverse + iString + "')"
 		spriteCells[i].setAttribute("onclick", functionString);
 		typeRows[i].setAttribute("onclick", functionString);
