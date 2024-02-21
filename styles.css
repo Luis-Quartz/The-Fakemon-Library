@@ -602,7 +602,13 @@ img.art {
 	max-height: 100%;
 }
 
+div.tracker-outline {
+	border-color: #5b5672;
+	border: 1px;
+	border-radius: 5px;
+}
 table.dex-tracker {
+	border-spacing: 0px;
 	cur
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -614,8 +620,8 @@ table.dex-tracker td:hover {
 }
 
 table td.dex-tracker {
-	border-top: 0px;
-	border-bottom: 0px;
+	border-top: 0;
+	border-bottom: 0;
 }
 table td.last-child {
 	border-bottom: 1px;
@@ -640,6 +646,7 @@ td.sprite-cell {
 	vertical-align: bottom;
 }
 td.type-cell {
+	border-top: 0px;
 }
 .cell50 {
 	width: 50%;
