@@ -127,7 +127,7 @@ function loadSavedForms(currentUniverse) {
 		if (getCookie(formId) == "caught") {
 			alert("Found  " + slot[i].id + "."); 
 			slot[i].classList.toggle("caught");
-			setCookie(currentUniverse + formID, "caught", 400);
+			setCookie(formID, "caught", 400);
 		}
 	}
 }
