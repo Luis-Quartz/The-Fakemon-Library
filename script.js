@@ -118,7 +118,7 @@ function loadSave(currentUniverse) {
 	}
 }
 
-function loadSavedForms(currentUniverse) {
+function loadSavedForms() {
 	var slot, i;
 	slot = document.getElementsByClassName("dex-tracker");
 	for (i = 0; i < (slot.length); i++) {
