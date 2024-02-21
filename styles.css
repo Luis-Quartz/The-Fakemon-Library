@@ -603,7 +603,8 @@ img.art {
 }
 
 table.dex-tracker {
-	border-spacing: 1px 0px;
+	border: 1px;
+	border-spacing: 0px;
 	cur
 	-webkit-user-select: none;
 	-moz-user-select: none;
