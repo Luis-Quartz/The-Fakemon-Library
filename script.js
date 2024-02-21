@@ -122,7 +122,7 @@ function loadSavedForms(currentUniverse) {
 	var slot, i;
 	slot = document.getElementsByClassName("dex-tracker");
 	for (i = 0; i < (slot.length); i++) {
-		formID = currentUniverse + slot[i].id
+		formID = currentUniverse + slot[i].id;
 		if (getCookie(formID) == "caught") {
 			slot[i].classList.toggle("caught");
 			setCookie(formID, "caught", 400);
