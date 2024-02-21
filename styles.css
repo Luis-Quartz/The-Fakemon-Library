@@ -603,6 +603,7 @@ img.art {
 }
 
 table.dex-tracker {
+	border-collapse: collapse;
 	border: 1px;
 	border-spacing: 0px;
 	cur
