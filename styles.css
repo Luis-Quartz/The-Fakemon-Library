@@ -583,29 +583,6 @@ table.dex-list {
 }
 
 /*Box Planner Styles========================================================================================*/
-div.pc-box {
-	display: flex;
-	flex-wrap: wrap;
-	grid-gap: 12px;
-	justify-content: center;
-	width: 100%;
-	max-width: 1042px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
-}
-th.pc-slot {
-	text-align: left;
-	width: 151px;
-	height: 22px;
-	padding: 0px 2px;
-}
-td.pc-slot {
-	padding: 3px;
-	height: 127px;
-	vertical-align: center;
-}
-
 div.gallery-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -643,7 +620,7 @@ table.caught td {
 	background: #b2f6cd;
 }
 
-th.sprh {
+th.slot-header {
 	text-align: left;
 	font-weight: normal;
 	padding: 0px 2px;
@@ -653,6 +630,7 @@ td.sprite-cell {
 	padding: 3px;
 	height: 103px;
 	vertical-align: bottom;
+	border-spacing: 1px 0px;
 }
 td.type-cell {
 }
