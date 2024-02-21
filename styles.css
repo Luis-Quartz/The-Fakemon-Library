@@ -603,6 +603,8 @@ img.art {
 }
 
 table.dex-tracker {
+	border: 1px;
+	border-spacing: 0px;
 	cur
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -630,8 +632,6 @@ td.sprite-cell {
 	padding: 3px;
 	height: 103px;
 	vertical-align: bottom;
-	border-top: 0px;
-	border-bottom: 0px;
 }
 td.type-cell {
 	border-top: 0px;
