@@ -613,8 +613,12 @@ table.dex-tracker td:hover {
 	cursor: pointer;
 }
 
-td.dex-tracker {
+table td.dex-tracker {
+	border-top: 0;
 	border-bottom: 0;
+}
+table td.last-child {
+	border-bottom: 1px;
 }
 
 table.caught th {
