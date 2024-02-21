@@ -122,9 +122,7 @@ function loadSavedForms() {
 	var slot, i;
 	slot = document.getElementsByClassName("dex-tracker");
 	for (i = 0; i < (slot.length); i++) {
-		alert("Checking " + slot[i].id + "."); 
 		if (getCookie(slot[i].id) == "caught") {
-			alert("Found  " + slot[i].id + "."); 
 			slot[i].classList.toggle("caught");
 			setCookie(slot[i].id, "caught", 400);
 		}
