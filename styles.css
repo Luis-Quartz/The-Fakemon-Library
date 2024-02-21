@@ -614,8 +614,8 @@ table.dex-tracker td:hover {
 }
 
 table td.dex-tracker {
-	border-top: 0;
-	border-bottom: 0;
+	border-top: 0px;
+	border-bottom: 0px;
 }
 table td.last-child {
 	border-bottom: 1px;
@@ -640,7 +640,6 @@ td.sprite-cell {
 	vertical-align: bottom;
 }
 td.type-cell {
-	border-top: 0px;
 }
 .cell50 {
 	width: 50%;
