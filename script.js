@@ -118,6 +118,17 @@ function loadSave(currentUniverse) {
 	}
 }
 
+function loadSavedForms(currentUniverse) {
+	var slot, i;
+	slot = document.getElementsByClassName("dex-tracker");
+	for (i = 0; i < (slot.length); i++) {
+		if (getCookie(currentUniverse + slot[i].id) == "caught") {
+			slot[i].classList.toggle("caught");
+			setCookie(currentUniverse + slot[i].id, "caught", 400);
+		}
+	}
+}
+
 function flipSprite(spr, front, back) {
 	var sp = document.getElementById(spr);
 	if (sp.title == "Front") {
