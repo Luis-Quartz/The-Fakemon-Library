@@ -603,8 +603,6 @@ img.art {
 }
 
 table.dex-tracker {
-	border: 1px;
-	border-spacing: 0px;
 	cur
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -613,6 +611,10 @@ table.dex-tracker {
 }
 table.dex-tracker td:hover {
 	cursor: pointer;
+}
+
+td.dex-tracker {
+	border-bottom: 0;
 }
 
 table.caught th {
