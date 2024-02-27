@@ -38,7 +38,7 @@ function buildPokedex(currentUniverse) {
 		typeRows[i].setAttribute("onclick", functionString);
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 		//Originally developed for the HANDY910is model of Pokédex, this simple upgrade incorporates the functionality to handle multiple Pokémon forms as well as gender differences.
-		if dexHeaders[i].classList.contains("form") {
+		if (dexHeaders[i].classList.contains("form")) {
 			dexHeaders[i].innerHTML = formList[i].id;
 		}
 	}
