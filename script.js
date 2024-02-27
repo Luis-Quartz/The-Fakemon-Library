@@ -36,11 +36,11 @@ function buildPokedex(currentUniverse) {
 		functionString = "toggleCaught('" + currentUniverse + iString + "')"
 		spriteCells[i].setAttribute("onclick", functionString);
 		typeRows[i].setAttribute("onclick", functionString);
-		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 		//Originally developed for the HANDY910is model of Pokédex, this simple upgrade incorporates the functionality to handle multiple Pokémon forms as well as gender differences.
 		if (dexHeaders[i].classList.contains("form")) {
 			dexHeaders[i].innerHTML = formList[i].id;
 		}
+		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 	}
 	
 	formList = document.getElementsByClassName("form");
@@ -100,6 +100,7 @@ function getCookie(cname) {
 }
 
 function toggleCaught(pid) {
+	//Inspired by Lyra's website, this lets you track which Pokémon you have caught in each ROM hack / fan game
 	var element = document.getElementById(pid);
 	element.classList.toggle("caught");
 	if (element.classList.contains("caught")) {
