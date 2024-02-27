@@ -31,16 +31,16 @@ function buildPokedex(currentUniverse) {
 	typeRows = document.getElementsByClassName("type-row");
 	for (i = 0; i < (dexTrackers.length); i++) {
 		iString = i.toString();
-		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 		dexTrackers[i].id = currentUniverse + iString;
 		functionString = "toggleCaught('" + currentUniverse + iString + "')"
 		spriteCells[i].setAttribute("onclick", functionString);
 		typeRows[i].setAttribute("onclick", functionString);
+		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 		//Originally developed for the HANDY910is model of Pokédex, this simple upgrade incorporates the functionality to handle multiple Pokémon forms as well as gender differences.
 		if (dexHeaders[i].classList.contains("form")) {
 			dexHeaders[i].innerHTML = formList[i].id;
 		}
-		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
+		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
 	}
 	
 	formList = document.getElementsByClassName("form");
