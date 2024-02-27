@@ -21,18 +21,10 @@ function includeHTML() {
 	}
 }
 
-//Originally developed for the HANDY910is model of Pokédex, this simple upgrade incorporates the functionality to handle multiple Pokémon forms as well as gender differences.
-function handleForms() {
-	formList = document.getElementsByClassName("form");
-	for (i = 0; i < (formList.length); i++) {
-		formList[i].innerHTML = formList[i].id;
-	}
-}
-
 function buildPokedex(currentUniverse) {
-	handleForms();
 	var dexLinks, dexSprites, dexTrackers, i;
 	dexTrackers = document.getElementsByClassName("dex-tracker");
+	dexHeaders = document.getElementsByClassName("dex-tracker");
 	dexLinks = document.getElementsByClassName("dex-link");
 	spriteCells = document.getElementsByClassName("sprite-cell");
 	dexSprites = document.getElementsByClassName("dex-sprite");
@@ -45,6 +37,15 @@ function buildPokedex(currentUniverse) {
 		spriteCells[i].setAttribute("onclick", functionString);
 		typeRows[i].setAttribute("onclick", functionString);
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
+		//Originally developed for the HANDY910is model of Pokédex, this simple upgrade incorporates the functionality to handle multiple Pokémon forms as well as gender differences.
+		if dexHeaders[i].classList.contains("form") {
+			dexHeaders[i].innerHTML = formList[i].id;
+		}
+	}
+	
+	formList = document.getElementsByClassName("form");
+	for (i = 0; i < (formList.length); i++) {
+		formList[i].innerHTML = formList[i].id;
 	}
 }
 
