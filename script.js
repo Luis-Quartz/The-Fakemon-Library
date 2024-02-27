@@ -30,6 +30,7 @@ function handleForms() {
 }
 
 function buildPokedex(currentUniverse) {
+	handleForms();
 	var dexLinks, dexSprites, dexTrackers, i;
 	dexTrackers = document.getElementsByClassName("dex-tracker");
 	dexLinks = document.getElementsByClassName("dex-link");
@@ -45,7 +46,6 @@ function buildPokedex(currentUniverse) {
 		typeRows[i].setAttribute("onclick", functionString);
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 	}
-	handleforms();
 }
 
 function toggleBar(id) {
